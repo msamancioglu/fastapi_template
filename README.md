@@ -1,2 +1,11 @@
 # fastapi_template
-Fastapi template with Postgres+Resdis+Flower+ELK stack
+Fastapi template with
+ + Postgres
+ + Celery
+ + Resdis
+ + Flower
+ + ELK stack
+
+Additionally
++ api rate limit
++ celery task monitoring
