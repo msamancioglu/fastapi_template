@@ -1,0 +1,1687 @@
+[2021-11-12 11:04:37,341: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 11:04:37,361: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 11:04:38,393: INFO/MainProcess] mingle: all alone
+[2021-11-12 11:04:38,413: INFO/MainProcess] celery@332a30d8ed91 ready.
+[2021-11-12 11:05:37,349: INFO/MainProcess] Received task: create_task[168edb25-ec7a-4aa7-9cd4-70e66b7b8494]  
+[2021-11-12 11:05:52,389: INFO/ForkPoolWorker-1] Task create_task[168edb25-ec7a-4aa7-9cd4-70e66b7b8494] succeeded in 15.034700399999565s: 'worked for 15 secs'
+[2021-11-12 11:06:21,791: INFO/MainProcess] Received task: create_task[67482de7-8c6c-40c2-82a0-c838ba823f3e]  
+[2021-11-12 11:06:36,800: INFO/ForkPoolWorker-1] Task create_task[67482de7-8c6c-40c2-82a0-c838ba823f3e] succeeded in 15.006170600000587s: 'worked for 15 secs'
+[2021-11-12 11:13:11,842: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 11:13:11,859: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 11:13:12,911: INFO/MainProcess] mingle: all alone
+[2021-11-12 11:13:12,933: INFO/MainProcess] celery@63840eadd625 ready.
+[2021-11-12 11:13:17,823: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 11:13:39,435: INFO/MainProcess] Received task: create_task[6d8ad4cc-21a2-437f-b6a1-c1131d99b0fe]  
+[2021-11-12 11:13:45,348: INFO/MainProcess] Received task: create_task[24f1fb18-baa1-4610-be32-f590dc79071f]  
+[2021-11-12 11:13:54,453: INFO/ForkPoolWorker-1] Task create_task[6d8ad4cc-21a2-437f-b6a1-c1131d99b0fe] succeeded in 15.010656800000106s: 'worked for 15 secs'
+[2021-11-12 11:14:15,407: INFO/ForkPoolWorker-3] Task create_task[24f1fb18-baa1-4610-be32-f590dc79071f] succeeded in 30.05284180000035s: 'worked for 30 secs'
+[2021-11-12 11:20:50,662: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/usr/local/lib/python3.9/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py", line 599, in start
+    c.loop(*c.loop_args())
+  File "/usr/local/lib/python3.9/site-packages/celery/worker/loops.py", line 83, in asynloop
+    next(loop)
+  File "/usr/local/lib/python3.9/site-packages/kombu/asynchronous/hub.py", line 364, in create_loop
+    cb(*cbargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/redis.py", line 1083, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/redis.py", line 354, in on_readable
+    chan.handlers[type]()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/redis.py", line 688, in _receive
+    ret.append(self._receive_one(c))
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/redis.py", line 698, in _receive_one
+    response = c.parse_response()
+  File "/usr/local/lib/python3.9/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.9/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.9/site-packages/redis/connection.py", line 324, in read_response
+    raw = self._buffer.readline()
+  File "/usr/local/lib/python3.9/site-packages/redis/connection.py", line 256, in readline
+    self._read_from_socket()
+  File "/usr/local/lib/python3.9/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+[2021-11-12 11:20:50,697: ERROR/MainProcess] consumer: Cannot connect to redis://redis:6379/0: Error 111 connecting to redis:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+[2021-11-12 11:20:53,765: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 11:20:53,786: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 11:20:54,802: INFO/MainProcess] mingle: all alone
+[2021-11-12 11:21:16,140: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 11:21:16,155: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 11:21:17,189: INFO/MainProcess] mingle: all alone
+[2021-11-12 11:21:17,255: INFO/MainProcess] celery@df3dbe10d2e5 ready.
+[2021-11-12 11:21:23,242: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 11:22:33,833: INFO/MainProcess] Received task: create_task[57156821-c3f5-4001-9f18-b997a0809f7c]  
+[2021-11-12 11:23:03,878: INFO/ForkPoolWorker-1] Task create_task[57156821-c3f5-4001-9f18-b997a0809f7c] succeeded in 30.036836300000687s: 'worked for 30 secs'
+[2021-11-12 11:23:32,164: INFO/MainProcess] Received task: create_task[b8463f17-d315-49bc-837c-4e692d242032]  
+[2021-11-12 11:24:12,215: INFO/ForkPoolWorker-1] Task create_task[b8463f17-d315-49bc-837c-4e692d242032] succeeded in 40.04308399999991s: 'worked for 40 secs'
+[2021-11-12 12:11:39,993: INFO/MainProcess] Received task: create_task[8fa8a377-952a-4c6f-a3b8-b2d063e3d85a]  
+[2021-11-12 12:12:20,048: INFO/ForkPoolWorker-1] Task create_task[8fa8a377-952a-4c6f-a3b8-b2d063e3d85a] succeeded in 40.04940300000089s: 'worked for 40 secs'
+[2021-11-12 12:35:54,794: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 12:35:54,820: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 12:35:55,883: INFO/MainProcess] mingle: all alone
+[2021-11-12 12:35:55,924: INFO/MainProcess] celery@2a0bbae01306 ready.
+[2021-11-12 12:36:00,893: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 12:37:08,438: INFO/MainProcess] Received task: create_task[6dae765b-fb21-4fbd-b8b9-630922afb49d]  
+[2021-11-12 12:37:48,515: INFO/ForkPoolWorker-1] Task create_task[6dae765b-fb21-4fbd-b8b9-630922afb49d] succeeded in 40.05474719999984s: 'worked for 40 secs'
+[2021-11-12 12:41:58,514: INFO/MainProcess] Received task: create_task[8cf357f3-dad8-4c38-8004-d9a6ec019031]  
+[2021-11-12 12:42:18,540: INFO/ForkPoolWorker-1] Task create_task[8cf357f3-dad8-4c38-8004-d9a6ec019031] succeeded in 20.021692399999665s: 'worked for 20 secs'
+[2021-11-12 13:44:19,190: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 13:44:19,207: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 13:44:20,235: INFO/MainProcess] mingle: all alone
+[2021-11-12 13:44:20,274: INFO/MainProcess] celery@e46603b55138 ready.
+[2021-11-12 13:44:26,267: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 13:44:51,494: INFO/MainProcess] Received task: create_task[893991ac-e423-4c9e-b7e7-0b48c66f39ed]  
+[2021-11-12 13:45:11,523: INFO/ForkPoolWorker-1] Task create_task[893991ac-e423-4c9e-b7e7-0b48c66f39ed] succeeded in 20.02517219999936s: 'worked for 20 secs'
+[2021-11-12 13:45:51,813: INFO/MainProcess] Received task: create_task[3dcffaa6-7133-4987-9291-9afb287e4e5b]  
+[2021-11-12 13:46:11,845: INFO/ForkPoolWorker-1] Task create_task[3dcffaa6-7133-4987-9291-9afb287e4e5b] succeeded in 20.02345510000123s: 'worked for 20 secs'
+[2021-11-12 13:47:06,254: INFO/MainProcess] Received task: create_task[1cbcc10c-ab72-4afe-a931-6dc155acc0e6]  
+[2021-11-12 13:47:26,280: INFO/ForkPoolWorker-1] Task create_task[1cbcc10c-ab72-4afe-a931-6dc155acc0e6] succeeded in 20.022116000000096s: 'worked for 20 secs'
+[2021-11-12 14:09:04,001: INFO/MainProcess] Received task: create_task[f0d794d1-2aa4-469e-9090-68966f5ee4e9]  
+[2021-11-12 14:09:10,226: INFO/MainProcess] Received task: create_task[d4335777-94af-4ae5-909d-f7a1b44cf228]  
+[2021-11-12 14:09:24,036: INFO/ForkPoolWorker-1] Task create_task[f0d794d1-2aa4-469e-9090-68966f5ee4e9] succeeded in 20.026408200001242s: 'worked for 20 secs'
+[2021-11-12 14:09:30,263: INFO/ForkPoolWorker-3] Task create_task[d4335777-94af-4ae5-909d-f7a1b44cf228] succeeded in 20.030474299999696s: 'worked for 20 secs'
+[2021-11-12 14:47:39,578: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 14:47:39,605: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 14:47:40,689: INFO/MainProcess] mingle: all alone
+[2021-11-12 14:47:40,775: INFO/MainProcess] celery@52fe299bc79e ready.
+[2021-11-12 14:47:48,714: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 14:48:13,932: INFO/MainProcess] Received task: create_task[e56642ed-712e-4244-adac-1c689bd0a237]  
+[2021-11-12 14:48:13,966: ERROR/ForkPoolWorker-1] Task create_task[e56642ed-712e-4244-adac-1c689bd0a237] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'task_type'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 21, in create_task
+    create_task.apply_async(task_id=''.join(random.choices(string.ascii_uppercase + string.digits, k = 20)))
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'task_type'
+[2021-11-12 14:48:16,345: INFO/MainProcess] Received task: create_task[61fec6ca-60fc-4862-a402-2d1fb67fcab1]  
+[2021-11-12 14:48:16,357: ERROR/ForkPoolWorker-1] Task create_task[61fec6ca-60fc-4862-a402-2d1fb67fcab1] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'task_type'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 21, in create_task
+    create_task.apply_async(task_id=''.join(random.choices(string.ascii_uppercase + string.digits, k = 20)))
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'task_type'
+[2021-11-12 14:54:14,505: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 14:54:14,523: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 14:54:15,562: INFO/MainProcess] mingle: all alone
+[2021-11-12 14:54:15,591: INFO/MainProcess] celery@61ed0456087d ready.
+[2021-11-12 14:54:19,996: INFO/MainProcess] Received task: create_task[3d3f5221-c9f3-443a-8ff4-088e7b65a056]  
+[2021-11-12 14:54:20,018: ERROR/ForkPoolWorker-1] Task create_task[3d3f5221-c9f3-443a-8ff4-088e7b65a056] raised unexpected: TypeError("create_task() missing 2 required positional arguments: 'task_type' and 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 15, in create_task
+    create_task.apply_async(task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 2 required positional arguments: 'task_type' and 'taskid'
+[2021-11-12 14:54:20,261: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 14:54:21,614: INFO/MainProcess] Received task: create_task[9745b074-6af1-4dbc-988d-b36e4287ebe4]  
+[2021-11-12 14:54:21,624: ERROR/ForkPoolWorker-1] Task create_task[9745b074-6af1-4dbc-988d-b36e4287ebe4] raised unexpected: TypeError("create_task() missing 2 required positional arguments: 'task_type' and 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 15, in create_task
+    create_task.apply_async(task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 2 required positional arguments: 'task_type' and 'taskid'
+[2021-11-12 14:54:22,782: INFO/MainProcess] Received task: create_task[8313a86b-ee46-45cc-b612-2e2008ac5116]  
+[2021-11-12 14:54:22,793: ERROR/ForkPoolWorker-1] Task create_task[8313a86b-ee46-45cc-b612-2e2008ac5116] raised unexpected: TypeError("create_task() missing 2 required positional arguments: 'task_type' and 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 15, in create_task
+    create_task.apply_async(task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 2 required positional arguments: 'task_type' and 'taskid'
+[2021-11-12 14:54:24,133: INFO/MainProcess] Received task: create_task[25f0eb9c-c841-4ae5-b610-2aaca2fe505f]  
+[2021-11-12 14:54:24,141: ERROR/ForkPoolWorker-1] Task create_task[25f0eb9c-c841-4ae5-b610-2aaca2fe505f] raised unexpected: TypeError("create_task() missing 2 required positional arguments: 'task_type' and 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 15, in create_task
+    create_task.apply_async(task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 2 required positional arguments: 'task_type' and 'taskid'
+[2021-11-12 14:58:01,898: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 14:58:01,928: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 14:58:02,979: INFO/MainProcess] mingle: all alone
+[2021-11-12 14:58:03,023: INFO/MainProcess] celery@1be5501d7ba8 ready.
+[2021-11-12 14:58:08,211: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 14:58:20,898: INFO/MainProcess] Received task: create_task[5aa987ce-2a06-4d15-9bb7-6990eb49df71]  
+[2021-11-12 14:58:20,925: ERROR/ForkPoolWorker-1] Task create_task[5aa987ce-2a06-4d15-9bb7-6990eb49df71] raised unexpected: TypeError("create_task() missing 2 required positional arguments: 'task_type' and 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 15, in create_task
+    create_task.apply_async(task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 2 required positional arguments: 'task_type' and 'taskid'
+[2021-11-12 14:58:23,548: INFO/MainProcess] Received task: create_task[08e3e537-aac7-46fc-af95-e6ac074a9f4d]  
+[2021-11-12 14:58:23,561: ERROR/ForkPoolWorker-1] Task create_task[08e3e537-aac7-46fc-af95-e6ac074a9f4d] raised unexpected: TypeError("create_task() missing 2 required positional arguments: 'task_type' and 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 15, in create_task
+    create_task.apply_async(task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 2 required positional arguments: 'task_type' and 'taskid'
+[2021-11-12 14:58:25,051: INFO/MainProcess] Received task: create_task[05e4118e-0ed7-493a-bad6-7d217b77b15c]  
+[2021-11-12 14:58:25,064: ERROR/ForkPoolWorker-1] Task create_task[05e4118e-0ed7-493a-bad6-7d217b77b15c] raised unexpected: TypeError("create_task() missing 2 required positional arguments: 'task_type' and 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 15, in create_task
+    create_task.apply_async(task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 2 required positional arguments: 'task_type' and 'taskid'
+[2021-11-12 14:58:26,184: INFO/MainProcess] Received task: create_task[444772fa-3b23-48a3-ac3a-10b24732cf57]  
+[2021-11-12 14:58:26,197: ERROR/ForkPoolWorker-1] Task create_task[444772fa-3b23-48a3-ac3a-10b24732cf57] raised unexpected: TypeError("create_task() missing 2 required positional arguments: 'task_type' and 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 15, in create_task
+    create_task.apply_async(task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 2 required positional arguments: 'task_type' and 'taskid'
+[2021-11-12 14:58:27,272: INFO/MainProcess] Received task: create_task[4a734462-5605-4174-a692-813b54fc4274]  
+[2021-11-12 14:58:27,280: ERROR/ForkPoolWorker-1] Task create_task[4a734462-5605-4174-a692-813b54fc4274] raised unexpected: TypeError("create_task() missing 2 required positional arguments: 'task_type' and 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 15, in create_task
+    create_task.apply_async(task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 2 required positional arguments: 'task_type' and 'taskid'
+[2021-11-12 15:22:13,185: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 15:22:13,292: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 15:22:14,386: INFO/MainProcess] mingle: all alone
+[2021-11-12 15:22:14,432: INFO/MainProcess] celery@b49e730c2c6e ready.
+[2021-11-12 15:22:19,680: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 15:25:18,202: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 15:25:18,276: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 15:25:19,445: INFO/MainProcess] mingle: all alone
+[2021-11-12 15:25:19,521: INFO/MainProcess] celery@c9f3f882c0fb ready.
+[2021-11-12 15:25:25,810: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 15:29:24,040: INFO/MainProcess] Received task: create_task[bc3ba36e-77c6-4f9d-8113-c5e1b5168602]  
+[2021-11-12 15:29:24,066: ERROR/ForkPoolWorker-1] Task create_task[bc3ba36e-77c6-4f9d-8113-c5e1b5168602] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'taskid'
+[2021-11-12 15:29:49,862: INFO/MainProcess] Received task: create_task[c2d67661-f7a1-4e40-8de3-9ab1b4e6c3cf]  
+[2021-11-12 15:29:49,872: ERROR/ForkPoolWorker-1] Task create_task[c2d67661-f7a1-4e40-8de3-9ab1b4e6c3cf] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'taskid'
+[2021-11-12 15:29:51,399: INFO/MainProcess] Received task: create_task[29620e4d-4593-431b-8d75-1f90fb326484]  
+[2021-11-12 15:29:51,408: ERROR/ForkPoolWorker-1] Task create_task[29620e4d-4593-431b-8d75-1f90fb326484] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'taskid'
+[2021-11-12 15:30:48,868: INFO/MainProcess] Received task: create_task[791ad621-b118-425f-977b-87ad4f8dbd54]  
+[2021-11-12 15:30:48,879: ERROR/ForkPoolWorker-1] Task create_task[791ad621-b118-425f-977b-87ad4f8dbd54] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'taskid'
+[2021-11-12 15:31:05,085: INFO/MainProcess] Received task: create_task[f75ba71a-b74b-40b4-a51b-9e51dc92c85e]  
+[2021-11-12 15:31:05,094: ERROR/ForkPoolWorker-1] Task create_task[f75ba71a-b74b-40b4-a51b-9e51dc92c85e] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'taskid'
+[2021-11-12 15:32:39,855: INFO/MainProcess] Received task: create_task[0cd9b65c-4a7c-48a6-92b9-a9b8043a9ba3]  
+[2021-11-12 15:32:39,866: ERROR/ForkPoolWorker-1] Task create_task[0cd9b65c-4a7c-48a6-92b9-a9b8043a9ba3] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'taskid'
+[2021-11-12 15:34:55,634: INFO/MainProcess] Received task: create_task[0e2fe91b-5508-4b94-be25-b70bb6bdc68f]  
+[2021-11-12 15:34:55,647: ERROR/ForkPoolWorker-1] Task create_task[0e2fe91b-5508-4b94-be25-b70bb6bdc68f] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'taskid'
+[2021-11-12 15:35:13,050: INFO/MainProcess] Received task: create_task[ad5d5814-89c2-4c7c-9b44-c8f3af653380]  
+[2021-11-12 15:35:13,063: ERROR/ForkPoolWorker-1] Task create_task[ad5d5814-89c2-4c7c-9b44-c8f3af653380] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'taskid'
+[2021-11-12 15:35:14,264: INFO/MainProcess] Received task: create_task[23d5978b-a2ee-4046-a9e0-3e41dd5b2c8f]  
+[2021-11-12 15:35:14,278: ERROR/ForkPoolWorker-1] Task create_task[23d5978b-a2ee-4046-a9e0-3e41dd5b2c8f] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'taskid'
+[2021-11-12 15:35:15,354: INFO/MainProcess] Received task: create_task[f0b753c5-2dac-42a9-9398-b9e1cca0a53e]  
+[2021-11-12 15:35:15,369: ERROR/ForkPoolWorker-1] Task create_task[f0b753c5-2dac-42a9-9398-b9e1cca0a53e] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'taskid'
+[2021-11-12 15:44:57,638: INFO/MainProcess] Received task: create_task[6c896aac-1af3-4e4a-aa68-63629a21e7d8]  
+[2021-11-12 15:44:57,655: ERROR/ForkPoolWorker-1] Task create_task[6c896aac-1af3-4e4a-aa68-63629a21e7d8] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'taskid'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'taskid'
+[2021-11-12 15:50:58,933: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 15:50:58,956: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 15:51:00,028: INFO/MainProcess] mingle: all alone
+[2021-11-12 15:51:00,088: INFO/MainProcess] celery@b8dbf6a3ac7b ready.
+[2021-11-12 15:51:05,305: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 15:51:11,538: INFO/MainProcess] Received task: create_task[7dc97f85-4149-4443-97f0-784074c6ec7f]  
+[2021-11-12 15:51:31,585: INFO/ForkPoolWorker-1] Task create_task[7dc97f85-4149-4443-97f0-784074c6ec7f] succeeded in 20.040090599999985s: 'worked for 20 secs task id '
+[2021-11-12 15:51:41,318: INFO/MainProcess] Received task: create_task[adae3175-618d-49f4-b9c5-1178ba416d81]  
+[2021-11-12 15:51:42,095: INFO/MainProcess] Received task: create_task[70fe29a2-aeb2-4d9b-a3d6-c881eac5cdad]  
+[2021-11-12 15:51:45,502: INFO/MainProcess] Received task: create_task[b1e9c17d-4fa4-4365-82e9-e634017d0de6]  
+[2021-11-12 15:51:46,302: INFO/MainProcess] Received task: create_task[479e67ea-a146-4d99-884a-c658b5ec1fad]  
+[2021-11-12 15:51:47,029: INFO/MainProcess] Received task: create_task[59ee7d90-722d-4e28-91b5-6c0443eb39e1]  
+[2021-11-12 15:52:01,347: INFO/ForkPoolWorker-1] Task create_task[adae3175-618d-49f4-b9c5-1178ba416d81] succeeded in 20.02198229999999s: 'worked for 20 secs task id '
+[2021-11-12 15:52:02,113: INFO/ForkPoolWorker-3] Task create_task[70fe29a2-aeb2-4d9b-a3d6-c881eac5cdad] succeeded in 20.013168999999834s: 'worked for 20 secs task id '
+[2021-11-12 15:52:05,534: INFO/ForkPoolWorker-2] Task create_task[b1e9c17d-4fa4-4365-82e9-e634017d0de6] succeeded in 20.022339199999806s: 'worked for 20 secs task id '
+[2021-11-12 15:52:06,332: INFO/ForkPoolWorker-4] Task create_task[479e67ea-a146-4d99-884a-c658b5ec1fad] succeeded in 20.025340400000005s: 'worked for 20 secs task id '
+[2021-11-12 15:52:21,375: INFO/ForkPoolWorker-1] Task create_task[59ee7d90-722d-4e28-91b5-6c0443eb39e1] succeeded in 20.02175710000006s: 'worked for 20 secs task id '
+[2021-11-12 19:53:41,641: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 19:53:41,657: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 19:53:42,688: INFO/MainProcess] mingle: all alone
+[2021-11-12 19:53:42,712: INFO/MainProcess] celery@b8dbf6a3ac7b ready.
+[2021-11-12 19:53:45,302: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 19:53:49,709: INFO/MainProcess] Received task: create_task[1237d240-2190-4cec-8aee-a0572e578b87]  
+[2021-11-12 19:53:49,756: ERROR/ForkPoolWorker-1] Task create_task[1237d240-2190-4cec-8aee-a0572e578b87] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'duration'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 18, in create_task
+    create_task.apply_async(task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'duration'
+[2021-11-12 19:54:07,297: INFO/MainProcess] Received task: create_task[d3db87d7-8f94-4dc6-86d6-57d4a3093acf]  
+[2021-11-12 19:54:07,310: ERROR/ForkPoolWorker-1] Task create_task[d3db87d7-8f94-4dc6-86d6-57d4a3093acf] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'duration'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 18, in create_task
+    create_task.apply_async(task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'duration'
+[2021-11-12 19:55:29,814: INFO/MainProcess] Received task: create_task[7f2e6457-cd04-4b15-ab66-6195b11d36f5]  
+[2021-11-12 19:55:29,885: ERROR/ForkPoolWorker-1] Task create_task[7f2e6457-cd04-4b15-ab66-6195b11d36f5] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'duration'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 18, in create_task
+    create_task.apply_async(duration=duration, task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'duration'
+[2021-11-12 19:56:05,229: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 19:56:05,241: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 19:56:06,267: INFO/MainProcess] mingle: all alone
+[2021-11-12 19:56:06,289: INFO/MainProcess] celery@b8dbf6a3ac7b ready.
+[2021-11-12 19:56:10,302: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 19:56:10,492: INFO/MainProcess] Received task: create_task[3367945d-d542-4c3e-bdb7-737248d5dd1f]  
+[2021-11-12 19:56:10,518: ERROR/ForkPoolWorker-1] Task create_task[3367945d-d542-4c3e-bdb7-737248d5dd1f] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'duration'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 18, in create_task
+    create_task.apply_async(duration=duration, task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'duration'
+[2021-11-12 19:56:30,996: INFO/MainProcess] Received task: create_task[30459963-6ea3-4d2b-8b79-42fd1a5bce53]  
+[2021-11-12 19:56:31,007: ERROR/ForkPoolWorker-1] Task create_task[30459963-6ea3-4d2b-8b79-42fd1a5bce53] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'duration'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 18, in create_task
+    create_task.apply_async(duration=duration, task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'duration'
+[2021-11-12 19:56:48,871: INFO/MainProcess] Received task: create_task[204c739e-37a3-45e9-81c7-73e81dc5eeff]  
+[2021-11-12 19:56:48,895: ERROR/ForkPoolWorker-1] Task create_task[204c739e-37a3-45e9-81c7-73e81dc5eeff] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'duration'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 18, in create_task
+    create_task.apply_async(duration=duration, task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'duration'
+[2021-11-12 19:56:55,441: INFO/MainProcess] Received task: create_task[4feddf93-e297-4a77-939d-1a1d530706a8]  
+[2021-11-12 19:56:55,463: ERROR/ForkPoolWorker-1] Task create_task[4feddf93-e297-4a77-939d-1a1d530706a8] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'duration'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 18, in create_task
+    create_task.apply_async(duration=duration, task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'duration'
+[2021-11-12 19:57:18,186: INFO/MainProcess] Received task: create_task[290e1c32-c533-426a-bed8-93023a1b03a2]  
+[2021-11-12 19:57:18,194: ERROR/ForkPoolWorker-1] Task create_task[290e1c32-c533-426a-bed8-93023a1b03a2] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'duration'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 18, in create_task
+    create_task.apply_async(duration=duration, task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'duration'
+[2021-11-12 19:57:38,835: INFO/MainProcess] Received task: create_task[1455f7b5-89b5-4a88-befa-5f8f2521907d]  
+[2021-11-12 19:57:38,859: ERROR/ForkPoolWorker-1] Task create_task[1455f7b5-89b5-4a88-befa-5f8f2521907d] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'duration'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 18, in create_task
+    create_task.apply_async(duration=duration, task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'duration'
+[2021-11-12 19:59:21,674: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 19:59:21,725: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 19:59:22,831: INFO/MainProcess] mingle: all alone
+[2021-11-12 19:59:24,466: INFO/MainProcess] celery@7ccfc9c4885f ready.
+[2021-11-12 19:59:34,685: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:00:36,191: INFO/MainProcess] Received task: create_task[aee4fc02-0da0-4bbd-b9a5-fa203f8bdeb0]  
+[2021-11-12 20:00:36,226: ERROR/ForkPoolWorker-1] Task create_task[aee4fc02-0da0-4bbd-b9a5-fa203f8bdeb0] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'duration'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 18, in create_task
+    create_task.apply_async(duration=duration, task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'duration'
+[2021-11-12 20:04:51,995: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:04:52,011: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:04:53,057: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:04:53,077: INFO/MainProcess] celery@7ccfc9c4885f ready.
+[2021-11-12 20:04:53,081: INFO/MainProcess] Received task: create_task[3e3cb8dc-730f-4f13-87d3-e8bdfa69d1f1]  
+[2021-11-12 20:04:54,685: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:05:03,100: ERROR/ForkPoolWorker-1] Task create_task[3e3cb8dc-730f-4f13-87d3-e8bdfa69d1f1] raised unexpected: NameError("name 'self' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 19, in create_task
+    self.apply_async(task_id=taskid)
+NameError: name 'self' is not defined
+[2021-11-12 20:05:09,365: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:05:09,382: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:05:10,452: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:05:10,513: INFO/MainProcess] celery@7ccfc9c4885f ready.
+[2021-11-12 20:05:10,530: INFO/MainProcess] Received task: create_task[0edbe8c1-f65a-4a9c-a4f7-3295b74b6b00]  
+[2021-11-12 20:05:10,545: INFO/MainProcess] Received task: create_task[82143228-89bd-45b7-8404-50b513de7d4b]  
+[2021-11-12 20:05:14,688: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:05:20,784: ERROR/ForkPoolWorker-1] Task create_task[0edbe8c1-f65a-4a9c-a4f7-3295b74b6b00] raised unexpected: NameError("name 'self' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 19, in create_task
+    self.apply_async(task_id=taskid)
+NameError: name 'self' is not defined
+[2021-11-12 20:05:20,806: ERROR/ForkPoolWorker-3] Task create_task[82143228-89bd-45b7-8404-50b513de7d4b] raised unexpected: NameError("name 'self' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 19, in create_task
+    self.apply_async(task_id=taskid)
+NameError: name 'self' is not defined
+[2021-11-12 20:05:26,566: INFO/MainProcess] Received task: create_task[2475687e-39b6-41a0-9294-a231f690a67f]  
+[2021-11-12 20:05:36,590: ERROR/ForkPoolWorker-1] Task create_task[2475687e-39b6-41a0-9294-a231f690a67f] raised unexpected: NameError("name 'self' is not defined")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 19, in create_task
+    self.apply_async(task_id=taskid)
+NameError: name 'self' is not defined
+[2021-11-12 20:06:32,988: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:06:33,000: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:06:34,027: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:06:34,052: INFO/MainProcess] celery@7ccfc9c4885f ready.
+[2021-11-12 20:06:34,684: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:06:45,901: INFO/MainProcess] Received task: create_task[283b72be-783c-466e-bbae-2cf977064e4b]  
+[2021-11-12 20:06:45,908: ERROR/ForkPoolWorker-1] Task create_task[OCL30655ABLN] raised unexpected: TypeError('worker.create_task() argument after * must be an iterable, not int')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+TypeError: worker.create_task() argument after * must be an iterable, not int
+[2021-11-12 20:06:55,924: INFO/ForkPoolWorker-1] Task create_task[283b72be-783c-466e-bbae-2cf977064e4b] succeeded in 10.018798099998094s: 'worked for 10 secs task id '
+[2021-11-12 20:07:16,365: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:07:16,379: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:07:22,405: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:07:22,441: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:07:23,493: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:07:23,509: INFO/MainProcess] celery@7ccfc9c4885f ready.
+[2021-11-12 20:07:24,540: INFO/MainProcess] Received task: create_task[212ca23b-17c6-4497-b89d-5d9b052db6a6]  
+[2021-11-12 20:07:24,559: ERROR/ForkPoolWorker-1] Task create_task[212ca23b-17c6-4497-b89d-5d9b052db6a6] raised unexpected: TypeError('worker.create_task() argument after * must be an iterable, not int')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 18, in create_task
+    create_task.apply_async(duration, task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: worker.create_task() argument after * must be an iterable, not int
+[2021-11-12 20:07:24,684: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:08:20,763: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:08:20,778: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:08:21,805: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:08:21,862: INFO/MainProcess] celery@7ccfc9c4885f ready.
+[2021-11-12 20:08:22,681: INFO/MainProcess] Received task: create_task[96937cda-1872-4e9d-9776-7d8633219582]  
+[2021-11-12 20:08:22,700: ERROR/ForkPoolWorker-1] Task create_task[96937cda-1872-4e9d-9776-7d8633219582] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'duration'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 18, in create_task
+    create_task.apply_async(duration=duration, task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'duration'
+[2021-11-12 20:08:24,685: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:12:55,881: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:12:55,893: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:12:56,919: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:12:56,947: INFO/MainProcess] celery@7ccfc9c4885f ready.
+[2021-11-12 20:12:59,685: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:13:01,169: INFO/MainProcess] Received task: create_task[3dd12a30-025d-4197-b54e-be4d94b16d61]  
+[2021-11-12 20:13:01,239: INFO/MainProcess] Received task: create_task[MZNGFVKW5AYR]  
+[2021-11-12 20:13:01,304: INFO/MainProcess] Received task: create_task[9I822W3EN52P]  
+[2021-11-12 20:13:01,363: INFO/MainProcess] Received task: create_task[PY0RJFABAG6L]  
+[2021-11-12 20:13:01,429: INFO/MainProcess] Received task: create_task[LQUHYN45O302]  
+[2021-11-12 20:13:11,249: INFO/ForkPoolWorker-1] Task create_task[3dd12a30-025d-4197-b54e-be4d94b16d61] succeeded in 10.074983900001826s: 'worked for 10 secs task id '
+[2021-11-12 20:13:11,270: INFO/MainProcess] Received task: create_task[26P6HBCB9QO3]  
+[2021-11-12 20:13:11,319: INFO/ForkPoolWorker-3] Task create_task[MZNGFVKW5AYR] succeeded in 10.073422400000709s: 'worked for 10 secs task id '
+[2021-11-12 20:13:11,341: INFO/MainProcess] Received task: create_task[4KMUM3L09AKQ]  
+[2021-11-12 20:13:11,375: INFO/ForkPoolWorker-2] Task create_task[9I822W3EN52P] succeeded in 10.06582409999828s: 'worked for 10 secs task id '
+[2021-11-12 20:13:11,387: INFO/MainProcess] Received task: create_task[OUM8KL2S0VCM]  
+[2021-11-12 20:13:11,435: INFO/ForkPoolWorker-4] Task create_task[PY0RJFABAG6L] succeeded in 10.067713500000536s: 'worked for 10 secs task id '
+[2021-11-12 20:13:11,447: INFO/MainProcess] Received task: create_task[E9OXBCM4QPB6]  
+[2021-11-12 20:13:21,277: INFO/ForkPoolWorker-1] Task create_task[LQUHYN45O302] succeeded in 10.018533500002377s: 'worked for 10 secs task id '
+[2021-11-12 20:13:21,288: INFO/MainProcess] Received task: create_task[IDTKF3KKTQN4]  
+[2021-11-12 20:13:21,342: INFO/ForkPoolWorker-3] Task create_task[26P6HBCB9QO3] succeeded in 10.01329899999837s: 'worked for 10 secs task id '
+[2021-11-12 20:13:21,350: INFO/MainProcess] Received task: create_task[XQF7X9B7N7NK]  
+[2021-11-12 20:13:21,395: INFO/ForkPoolWorker-2] Task create_task[4KMUM3L09AKQ] succeeded in 10.013808200001222s: 'worked for 10 secs task id '
+[2021-11-12 20:13:21,420: INFO/MainProcess] Received task: create_task[LCU1PJ640JC2]  
+[2021-11-12 20:13:21,454: INFO/ForkPoolWorker-4] Task create_task[OUM8KL2S0VCM] succeeded in 10.01280929999848s: 'worked for 10 secs task id '
+[2021-11-12 20:13:21,468: INFO/MainProcess] Received task: create_task[469B1P6OGNMN]  
+[2021-11-12 20:13:31,299: INFO/ForkPoolWorker-1] Task create_task[E9OXBCM4QPB6] succeeded in 10.016165900000487s: 'worked for 10 secs task id '
+[2021-11-12 20:13:31,308: INFO/MainProcess] Received task: create_task[SDTBQMQDKEG8]  
+[2021-11-12 20:13:31,354: INFO/ForkPoolWorker-3] Task create_task[IDTKF3KKTQN4] succeeded in 10.008033400001295s: 'worked for 10 secs task id '
+[2021-11-12 20:13:31,362: INFO/MainProcess] Received task: create_task[8X7DBTM5IJXZ]  
+[2021-11-12 20:13:31,422: INFO/ForkPoolWorker-2] Task create_task[XQF7X9B7N7NK] succeeded in 10.016421500000433s: 'worked for 10 secs task id '
+[2021-11-12 20:13:31,434: INFO/MainProcess] Received task: create_task[GAFVPGQZGGY3]  
+[2021-11-12 20:13:31,476: INFO/ForkPoolWorker-4] Task create_task[LCU1PJ640JC2] succeeded in 10.015976999999111s: 'worked for 10 secs task id '
+[2021-11-12 20:13:31,485: INFO/MainProcess] Received task: create_task[OUM20CFTZJ8T]  
+[2021-11-12 20:13:41,311: INFO/ForkPoolWorker-1] Task create_task[469B1P6OGNMN] succeeded in 10.007971500002895s: 'worked for 10 secs task id '
+[2021-11-12 20:13:41,319: INFO/MainProcess] Received task: create_task[GRKLUX33IMM5]  
+[2021-11-12 20:13:41,362: INFO/ForkPoolWorker-3] Task create_task[SDTBQMQDKEG8] succeeded in 10.004320100000768s: 'worked for 10 secs task id '
+[2021-11-12 20:13:41,370: INFO/MainProcess] Received task: create_task[RNY0P14CUVO5]  
+[2021-11-12 20:13:41,444: INFO/ForkPoolWorker-2] Task create_task[8X7DBTM5IJXZ] succeeded in 10.014562799999112s: 'worked for 10 secs task id '
+[2021-11-12 20:13:41,451: INFO/MainProcess] Received task: create_task[SHI3S0NGWRPA]  
+[2021-11-12 20:13:41,492: INFO/ForkPoolWorker-4] Task create_task[GAFVPGQZGGY3] succeeded in 10.01143349999984s: 'worked for 10 secs task id '
+[2021-11-12 20:13:41,499: INFO/MainProcess] Received task: create_task[UCAQBI4IRSGQ]  
+[2021-11-12 20:13:51,329: INFO/ForkPoolWorker-1] Task create_task[OUM20CFTZJ8T] succeeded in 10.013931299999967s: 'worked for 10 secs task id '
+[2021-11-12 20:13:51,342: INFO/MainProcess] Received task: create_task[5ADFP5QXRPU0]  
+[2021-11-12 20:13:51,383: INFO/ForkPoolWorker-3] Task create_task[GRKLUX33IMM5] succeeded in 10.017306900001131s: 'worked for 10 secs task id '
+[2021-11-12 20:13:51,408: INFO/MainProcess] Received task: create_task[CZTY4P360PR5]  
+[2021-11-12 20:13:51,453: INFO/ForkPoolWorker-2] Task create_task[RNY0P14CUVO5] succeeded in 10.00535519999903s: 'worked for 10 secs task id '
+[2021-11-12 20:13:51,462: INFO/MainProcess] Received task: create_task[SNDL98GRU99M]  
+[2021-11-12 20:13:51,501: INFO/ForkPoolWorker-4] Task create_task[SHI3S0NGWRPA] succeeded in 10.005920599996898s: 'worked for 10 secs task id '
+[2021-11-12 20:13:51,507: INFO/MainProcess] Received task: create_task[M576MZEMVOV3]  
+[2021-11-12 20:14:00,326: INFO/MainProcess] Received task: create_task[896788fe-84a6-464a-9a1d-5aeb8c31b18e]  
+[2021-11-12 20:14:01,353: INFO/ForkPoolWorker-1] Task create_task[UCAQBI4IRSGQ] succeeded in 10.020259999997506s: 'worked for 10 secs task id '
+[2021-11-12 20:14:01,390: INFO/MainProcess] Received task: create_task[09437CZ3Z7PG]  
+[2021-11-12 20:14:01,414: INFO/ForkPoolWorker-3] Task create_task[5ADFP5QXRPU0] succeeded in 10.020594800000254s: 'worked for 10 secs task id '
+[2021-11-12 20:14:01,473: INFO/MainProcess] Received task: create_task[JL1GUU3F9U76]  
+[2021-11-12 20:14:01,491: INFO/ForkPoolWorker-2] Task create_task[CZTY4P360PR5] succeeded in 10.033845799996925s: 'worked for 10 secs task id '
+[2021-11-12 20:14:01,516: INFO/MainProcess] Received task: create_task[VL120520T5CF]  
+[2021-11-12 20:14:01,518: INFO/ForkPoolWorker-4] Task create_task[SNDL98GRU99M] succeeded in 10.013395099998888s: 'worked for 10 secs task id '
+[2021-11-12 20:14:01,538: INFO/MainProcess] Received task: create_task[7BI7ITTFZ7FJ]  
+[2021-11-12 20:14:11,395: INFO/ForkPoolWorker-1] Task create_task[M576MZEMVOV3] succeeded in 10.02162540000063s: 'worked for 10 secs task id '
+[2021-11-12 20:14:11,406: INFO/MainProcess] Received task: create_task[66K0RI54NBCF]  
+[2021-11-12 20:14:11,485: INFO/ForkPoolWorker-3] Task create_task[896788fe-84a6-464a-9a1d-5aeb8c31b18e] succeeded in 10.017049499998393s: 'worked for 10 secs task id '
+[2021-11-12 20:14:11,495: INFO/MainProcess] Received task: create_task[Q7NYO8N57A3K]  
+[2021-11-12 20:14:11,512: INFO/ForkPoolWorker-2] Task create_task[09437CZ3Z7PG] succeeded in 10.01021369999944s: 'worked for 10 secs task id '
+[2021-11-12 20:14:11,520: INFO/MainProcess] Received task: create_task[ZDTB4CZ5SWI6]  
+[2021-11-12 20:14:11,542: INFO/ForkPoolWorker-4] Task create_task[JL1GUU3F9U76] succeeded in 10.00999579999916s: 'worked for 10 secs task id '
+[2021-11-12 20:14:11,552: INFO/MainProcess] Received task: create_task[TS0PPYOGE7RA]  
+[2021-11-12 20:14:21,415: INFO/ForkPoolWorker-1] Task create_task[VL120520T5CF] succeeded in 10.015831900000194s: 'worked for 10 secs task id '
+[2021-11-12 20:14:21,423: INFO/MainProcess] Received task: create_task[8VU3F5EHPNP5]  
+[2021-11-12 20:14:21,501: INFO/ForkPoolWorker-3] Task create_task[7BI7ITTFZ7FJ] succeeded in 10.010194700000284s: 'worked for 10 secs task id '
+[2021-11-12 20:14:21,509: INFO/MainProcess] Received task: create_task[94CQUOMYAE02]  
+[2021-11-12 20:14:21,526: INFO/ForkPoolWorker-2] Task create_task[66K0RI54NBCF] succeeded in 10.009537699999782s: 'worked for 10 secs task id '
+[2021-11-12 20:14:21,533: INFO/MainProcess] Received task: create_task[6YJG25REEARZ]  
+[2021-11-12 20:14:21,564: INFO/ForkPoolWorker-4] Task create_task[Q7NYO8N57A3K] succeeded in 10.016760400001658s: 'worked for 10 secs task id '
+[2021-11-12 20:14:21,571: INFO/MainProcess] Received task: create_task[17ETUW44DXD7]  
+[2021-11-12 20:14:31,432: INFO/ForkPoolWorker-1] Task create_task[ZDTB4CZ5SWI6] succeeded in 10.014354299997649s: 'worked for 10 secs task id '
+[2021-11-12 20:14:31,449: INFO/MainProcess] Received task: create_task[HGT8VD9X4Z0S]  
+[2021-11-12 20:14:31,519: INFO/ForkPoolWorker-3] Task create_task[TS0PPYOGE7RA] succeeded in 10.014292100000603s: 'worked for 10 secs task id '
+[2021-11-12 20:14:31,529: INFO/MainProcess] Received task: create_task[OF7517SHH24Q]  
+[2021-11-12 20:14:31,540: INFO/ForkPoolWorker-2] Task create_task[8VU3F5EHPNP5] succeeded in 10.010936599999695s: 'worked for 10 secs task id '
+[2021-11-12 20:14:31,550: INFO/MainProcess] Received task: create_task[MX1AWH09OQB3]  
+[2021-11-12 20:14:31,572: INFO/ForkPoolWorker-4] Task create_task[94CQUOMYAE02] succeeded in 10.004661700000725s: 'worked for 10 secs task id '
+[2021-11-12 20:14:31,583: INFO/MainProcess] Received task: create_task[0YA3TPWJZOWY]  
+[2021-11-12 20:14:41,459: INFO/ForkPoolWorker-1] Task create_task[6YJG25REEARZ] succeeded in 10.01410450000185s: 'worked for 10 secs task id '
+[2021-11-12 20:14:41,466: INFO/MainProcess] Received task: create_task[CW3A957GASPR]  
+[2021-11-12 20:14:41,538: INFO/ForkPoolWorker-3] Task create_task[17ETUW44DXD7] succeeded in 10.014480300000287s: 'worked for 10 secs task id '
+[2021-11-12 20:14:41,546: INFO/MainProcess] Received task: create_task[OAO0C1XU60TK]  
+[2021-11-12 20:14:41,551: INFO/ForkPoolWorker-2] Task create_task[HGT8VD9X4Z0S] succeeded in 10.005937499998254s: 'worked for 10 secs task id '
+[2021-11-12 20:14:41,558: INFO/MainProcess] Received task: create_task[3KWR6DCMX4XB]  
+[2021-11-12 20:14:41,592: INFO/ForkPoolWorker-4] Task create_task[OF7517SHH24Q] succeeded in 10.014554900000803s: 'worked for 10 secs task id '
+[2021-11-12 20:14:41,600: INFO/MainProcess] Received task: create_task[VKXLG6ZY1S4K]  
+[2021-11-12 20:14:43,059: INFO/MainProcess] Received task: create_task[b791494b-7e92-4263-91ff-7a31a92094fd]  
+[2021-11-12 20:14:51,477: INFO/ForkPoolWorker-1] Task create_task[MX1AWH09OQB3] succeeded in 10.014218700001948s: 'worked for 10 secs task id '
+[2021-11-12 20:14:51,487: INFO/MainProcess] Received task: create_task[J0JLDPYKUWQD]  
+[2021-11-12 20:14:51,551: INFO/ForkPoolWorker-3] Task create_task[0YA3TPWJZOWY] succeeded in 10.009660799998528s: 'worked for 10 secs task id '
+[2021-11-12 20:14:51,560: INFO/MainProcess] Received task: create_task[99C9ZEH4DW5I]  
+[2021-11-12 20:14:51,562: INFO/ForkPoolWorker-2] Task create_task[CW3A957GASPR] succeeded in 10.00715080000009s: 'worked for 10 secs task id '
+[2021-11-12 20:14:51,578: INFO/MainProcess] Received task: create_task[VHH1IE7PW7VB]  
+[2021-11-12 20:14:51,601: INFO/ForkPoolWorker-4] Task create_task[OAO0C1XU60TK] succeeded in 10.00545819999752s: 'worked for 10 secs task id '
+[2021-11-12 20:14:51,609: INFO/MainProcess] Received task: create_task[ICBXSTT3UIG8]  
+[2021-11-12 20:15:01,496: INFO/ForkPoolWorker-1] Task create_task[3KWR6DCMX4XB] succeeded in 10.014071800000238s: 'worked for 10 secs task id '
+[2021-11-12 20:15:01,503: INFO/MainProcess] Received task: create_task[DV203E7MKQQ1]  
+[2021-11-12 20:15:01,570: INFO/ForkPoolWorker-3] Task create_task[VKXLG6ZY1S4K] succeeded in 10.01449219999995s: 'worked for 10 secs task id '
+[2021-11-12 20:15:01,580: INFO/MainProcess] Received task: create_task[WL3NWNB6GL0B]  
+[2021-11-12 20:15:01,587: INFO/ForkPoolWorker-2] Task create_task[b791494b-7e92-4263-91ff-7a31a92094fd] succeeded in 10.01363610000044s: 'worked for 10 secs task id '
+[2021-11-12 20:15:01,595: INFO/MainProcess] Received task: create_task[6GEDZ72828NU]  
+[2021-11-12 20:15:01,611: INFO/ForkPoolWorker-4] Task create_task[J0JLDPYKUWQD] succeeded in 10.006210800002009s: 'worked for 10 secs task id '
+[2021-11-12 20:15:01,619: INFO/MainProcess] Received task: create_task[ZTRYEA085I24]  
+[2021-11-12 20:15:11,516: INFO/ForkPoolWorker-1] Task create_task[99C9ZEH4DW5I] succeeded in 10.016423900000518s: 'worked for 10 secs task id '
+[2021-11-12 20:15:11,538: INFO/MainProcess] Received task: create_task[49Y41BCXX1NU]  
+[2021-11-12 20:15:11,582: INFO/ForkPoolWorker-3] Task create_task[VHH1IE7PW7VB] succeeded in 10.006286699997872s: 'worked for 10 secs task id '
+[2021-11-12 20:15:11,604: INFO/ForkPoolWorker-2] Task create_task[ICBXSTT3UIG8] succeeded in 10.013585800003057s: 'worked for 10 secs task id '
+[2021-11-12 20:15:11,606: INFO/MainProcess] Received task: create_task[FJ511ZH3M12Z]  
+[2021-11-12 20:15:11,622: INFO/ForkPoolWorker-4] Task create_task[DV203E7MKQQ1] succeeded in 10.006768700000976s: 'worked for 10 secs task id '
+[2021-11-12 20:15:11,624: INFO/MainProcess] Received task: create_task[RF0PLEQW5MRO]  
+[2021-11-12 20:15:11,636: INFO/MainProcess] Received task: create_task[LQC27UH4Y47V]  
+[2021-11-12 20:15:21,543: INFO/ForkPoolWorker-1] Task create_task[WL3NWNB6GL0B] succeeded in 10.018318599999475s: 'worked for 10 secs task id '
+[2021-11-12 20:15:21,552: INFO/MainProcess] Received task: create_task[34MGTCCNCFIC]  
+[2021-11-12 20:15:21,601: INFO/ForkPoolWorker-3] Task create_task[6GEDZ72828NU] succeeded in 10.009675500001322s: 'worked for 10 secs task id '
+[2021-11-12 20:15:21,607: INFO/MainProcess] Received task: create_task[V41S5EOHGD13]  
+[2021-11-12 20:15:21,632: INFO/ForkPoolWorker-2] Task create_task[ZTRYEA085I24] succeeded in 10.014105199999904s: 'worked for 10 secs task id '
+[2021-11-12 20:15:21,638: INFO/MainProcess] Received task: create_task[VUAGDSKSRHBM]  
+[2021-11-12 20:15:21,641: INFO/ForkPoolWorker-4] Task create_task[49Y41BCXX1NU] succeeded in 10.010892199999944s: 'worked for 10 secs task id '
+[2021-11-12 20:15:21,648: INFO/MainProcess] Received task: create_task[FE36JZOYGR73]  
+[2021-11-12 20:15:31,562: INFO/ForkPoolWorker-1] Task create_task[FJ511ZH3M12Z] succeeded in 10.01437420000002s: 'worked for 10 secs task id '
+[2021-11-12 20:15:31,569: INFO/MainProcess] Received task: create_task[CC95F97W1N12]  
+[2021-11-12 20:15:31,612: INFO/ForkPoolWorker-3] Task create_task[RF0PLEQW5MRO] succeeded in 10.007783199998812s: 'worked for 10 secs task id '
+[2021-11-12 20:15:31,619: INFO/MainProcess] Received task: create_task[ZZTU4XREAZLF]  
+[2021-11-12 20:15:31,648: INFO/ForkPoolWorker-2] Task create_task[LQC27UH4Y47V] succeeded in 10.013596599997982s: 'worked for 10 secs task id '
+[2021-11-12 20:15:31,655: INFO/MainProcess] Received task: create_task[Z94IDNG42N8O]  
+[2021-11-12 20:15:31,658: INFO/ForkPoolWorker-4] Task create_task[34MGTCCNCFIC] succeeded in 10.013550599996961s: 'worked for 10 secs task id '
+[2021-11-12 20:15:31,666: INFO/MainProcess] Received task: create_task[Z7N7VW0ZLSRA]  
+[2021-11-12 20:15:41,582: INFO/ForkPoolWorker-1] Task create_task[V41S5EOHGD13] succeeded in 10.016361599999072s: 'worked for 10 secs task id '
+[2021-11-12 20:15:41,600: INFO/MainProcess] Received task: create_task[IV51D47MSVT2]  
+[2021-11-12 20:15:41,622: INFO/ForkPoolWorker-3] Task create_task[VUAGDSKSRHBM] succeeded in 10.00694890000159s: 'worked for 10 secs task id '
+[2021-11-12 20:15:41,633: INFO/MainProcess] Received task: create_task[0QMTJ4WKJ51B]  
+[2021-11-12 20:15:41,671: INFO/ForkPoolWorker-2] Task create_task[FE36JZOYGR73] succeeded in 10.019252800000686s: 'worked for 10 secs task id '
+[2021-11-12 20:15:41,679: INFO/ForkPoolWorker-4] Task create_task[CC95F97W1N12] succeeded in 10.016813600002934s: 'worked for 10 secs task id '
+[2021-11-12 20:15:41,695: INFO/MainProcess] Received task: create_task[PKEW77D6PV5G]  
+[2021-11-12 20:15:41,713: INFO/MainProcess] Received task: create_task[CC7GMN1PE98J]  
+[2021-11-12 20:15:51,610: INFO/ForkPoolWorker-1] Task create_task[ZZTU4XREAZLF] succeeded in 10.01905970000007s: 'worked for 10 secs task id '
+[2021-11-12 20:15:51,622: INFO/MainProcess] Received task: create_task[WT3DGHSYC6RX]  
+[2021-11-12 20:15:51,642: INFO/ForkPoolWorker-3] Task create_task[Z94IDNG42N8O] succeeded in 10.015045899999677s: 'worked for 10 secs task id '
+[2021-11-12 20:15:51,655: INFO/MainProcess] Received task: create_task[HA7HPGZ4FW9R]  
+[2021-11-12 20:15:51,692: INFO/ForkPoolWorker-2] Task create_task[Z7N7VW0ZLSRA] succeeded in 10.008616399998573s: 'worked for 10 secs task id '
+[2021-11-12 20:15:51,704: INFO/MainProcess] Received task: create_task[QS9EUK9TN4DK]  
+[2021-11-12 20:15:51,712: INFO/ForkPoolWorker-4] Task create_task[IV51D47MSVT2] succeeded in 10.009689999998955s: 'worked for 10 secs task id '
+[2021-11-12 20:15:51,719: INFO/MainProcess] Received task: create_task[4ACVISM9UH93]  
+[2021-11-12 20:16:01,627: INFO/ForkPoolWorker-1] Task create_task[0QMTJ4WKJ51B] succeeded in 10.010976399997162s: 'worked for 10 secs task id '
+[2021-11-12 20:16:01,634: INFO/MainProcess] Received task: create_task[ZWR69M26O3QR]  
+[2021-11-12 20:16:01,662: INFO/ForkPoolWorker-3] Task create_task[PKEW77D6PV5G] succeeded in 10.013675900001545s: 'worked for 10 secs task id '
+[2021-11-12 20:16:01,668: INFO/MainProcess] Received task: create_task[X4IMJDZ6FH05]  
+[2021-11-12 20:16:01,701: INFO/ForkPoolWorker-2] Task create_task[CC7GMN1PE98J] succeeded in 10.005089999998745s: 'worked for 10 secs task id '
+[2021-11-12 20:16:01,710: INFO/MainProcess] Received task: create_task[Z63D3KJAV556]  
+[2021-11-12 20:16:01,723: INFO/ForkPoolWorker-4] Task create_task[WT3DGHSYC6RX] succeeded in 10.007686000000831s: 'worked for 10 secs task id '
+[2021-11-12 20:16:01,737: INFO/MainProcess] Received task: create_task[3J6G1NLWOIS4]  
+[2021-11-12 20:16:11,642: INFO/ForkPoolWorker-1] Task create_task[HA7HPGZ4FW9R] succeeded in 10.011167699998623s: 'worked for 10 secs task id '
+[2021-11-12 20:16:11,652: INFO/MainProcess] Received task: create_task[L85G3ONIOPNA]  
+[2021-11-12 20:16:11,671: INFO/ForkPoolWorker-3] Task create_task[QS9EUK9TN4DK] succeeded in 10.006453699999838s: 'worked for 10 secs task id '
+[2021-11-12 20:16:11,678: INFO/MainProcess] Received task: create_task[79MDC2TO152B]  
+[2021-11-12 20:16:11,711: INFO/ForkPoolWorker-2] Task create_task[4ACVISM9UH93] succeeded in 10.006755999998859s: 'worked for 10 secs task id '
+[2021-11-12 20:16:11,723: INFO/MainProcess] Received task: create_task[BMUQ4PXQDGE0]  
+[2021-11-12 20:16:11,743: INFO/ForkPoolWorker-4] Task create_task[ZWR69M26O3QR] succeeded in 10.012528600000223s: 'worked for 10 secs task id '
+[2021-11-12 20:16:11,757: INFO/MainProcess] Received task: create_task[WLUEXII6G0G8]  
+[2021-11-12 20:16:21,652: INFO/ForkPoolWorker-1] Task create_task[X4IMJDZ6FH05] succeeded in 10.005582500001765s: 'worked for 10 secs task id '
+[2021-11-12 20:16:21,660: INFO/MainProcess] Received task: create_task[HY95GLUKH7D8]  
+[2021-11-12 20:16:21,681: INFO/ForkPoolWorker-3] Task create_task[Z63D3KJAV556] succeeded in 10.006090999999287s: 'worked for 10 secs task id '
+[2021-11-12 20:16:21,688: INFO/MainProcess] Received task: create_task[WUNQ17IJ9LSO]  
+[2021-11-12 20:16:21,721: INFO/ForkPoolWorker-2] Task create_task[3J6G1NLWOIS4] succeeded in 10.006696099997498s: 'worked for 10 secs task id '
+[2021-11-12 20:16:21,729: INFO/MainProcess] Received task: create_task[NXAJD6L4TADQ]  
+[2021-11-12 20:16:21,761: INFO/ForkPoolWorker-4] Task create_task[L85G3ONIOPNA] succeeded in 10.01173689999996s: 'worked for 10 secs task id '
+[2021-11-12 20:16:21,769: INFO/MainProcess] Received task: create_task[4JPXV46H7KZD]  
+[2021-11-12 20:16:31,666: INFO/ForkPoolWorker-1] Task create_task[79MDC2TO152B] succeeded in 10.010802900000272s: 'worked for 10 secs task id '
+[2021-11-12 20:16:31,676: INFO/MainProcess] Received task: create_task[D9NZ91EZJAA7]  
+[2021-11-12 20:16:31,698: INFO/ForkPoolWorker-3] Task create_task[BMUQ4PXQDGE0] succeeded in 10.013500900000508s: 'worked for 10 secs task id '
+[2021-11-12 20:16:31,706: INFO/MainProcess] Received task: create_task[ID9SDXDTCAYK]  
+[2021-11-12 20:16:31,739: INFO/ForkPoolWorker-2] Task create_task[WLUEXII6G0G8] succeeded in 10.013444099997287s: 'worked for 10 secs task id '
+[2021-11-12 20:16:31,748: INFO/MainProcess] Received task: create_task[1WCI7USYEJUM]  
+[2021-11-12 20:16:31,772: INFO/ForkPoolWorker-4] Task create_task[HY95GLUKH7D8] succeeded in 10.007191500000772s: 'worked for 10 secs task id '
+[2021-11-12 20:16:31,783: INFO/MainProcess] Received task: create_task[SCNPJJB67Z6J]  
+[2021-11-12 20:16:41,682: INFO/ForkPoolWorker-1] Task create_task[WUNQ17IJ9LSO] succeeded in 10.011829200000648s: 'worked for 10 secs task id '
+[2021-11-12 20:16:41,689: INFO/MainProcess] Received task: create_task[J2W3CXGDBLOB]  
+[2021-11-12 20:16:41,713: INFO/ForkPoolWorker-3] Task create_task[NXAJD6L4TADQ] succeeded in 10.010788499999762s: 'worked for 10 secs task id '
+[2021-11-12 20:16:41,721: INFO/MainProcess] Received task: create_task[3P29WIKOVFS6]  
+[2021-11-12 20:16:41,752: INFO/ForkPoolWorker-2] Task create_task[4JPXV46H7KZD] succeeded in 10.008973200001492s: 'worked for 10 secs task id '
+[2021-11-12 20:16:41,758: INFO/MainProcess] Received task: create_task[733S8XU22IH0]  
+[2021-11-12 20:16:41,792: INFO/ForkPoolWorker-4] Task create_task[D9NZ91EZJAA7] succeeded in 10.014633599999797s: 'worked for 10 secs task id '
+[2021-11-12 20:16:41,798: INFO/MainProcess] Received task: create_task[Y0DLRT2ITMCY]  
+[2021-11-12 20:16:51,691: INFO/ForkPoolWorker-1] Task create_task[ID9SDXDTCAYK] succeeded in 10.005972799997835s: 'worked for 10 secs task id '
+[2021-11-12 20:16:51,698: INFO/MainProcess] Received task: create_task[XZHWLH1KMZ3X]  
+[2021-11-12 20:16:51,731: INFO/ForkPoolWorker-3] Task create_task[1WCI7USYEJUM] succeeded in 10.014237600000342s: 'worked for 10 secs task id '
+[2021-11-12 20:16:51,738: INFO/MainProcess] Received task: create_task[0BCYLCHHRJGA]  
+[2021-11-12 20:16:51,769: INFO/ForkPoolWorker-2] Task create_task[SCNPJJB67Z6J] succeeded in 10.014071800000238s: 'worked for 10 secs task id '
+[2021-11-12 20:16:51,776: INFO/MainProcess] Received task: create_task[YZ1RCDP2TTFH]  
+[2021-11-12 20:16:51,801: INFO/ForkPoolWorker-4] Task create_task[J2W3CXGDBLOB] succeeded in 10.006329100000585s: 'worked for 10 secs task id '
+[2021-11-12 20:16:51,808: INFO/MainProcess] Received task: create_task[CMTHX8KL0DKL]  
+[2021-11-12 20:17:01,702: INFO/ForkPoolWorker-1] Task create_task[3P29WIKOVFS6] succeeded in 10.006647899997915s: 'worked for 10 secs task id '
+[2021-11-12 20:17:01,709: INFO/MainProcess] Received task: create_task[PYHQUWRS183B]  
+[2021-11-12 20:17:01,753: INFO/ForkPoolWorker-3] Task create_task[733S8XU22IH0] succeeded in 10.018002199998591s: 'worked for 10 secs task id '
+[2021-11-12 20:17:01,771: INFO/MainProcess] Received task: create_task[W8IF6IHJ3GCH]  
+[2021-11-12 20:17:01,787: INFO/ForkPoolWorker-2] Task create_task[Y0DLRT2ITMCY] succeeded in 10.015022400002636s: 'worked for 10 secs task id '
+[2021-11-12 20:17:01,814: INFO/ForkPoolWorker-4] Task create_task[XZHWLH1KMZ3X] succeeded in 10.00969719999921s: 'worked for 10 secs task id '
+[2021-11-12 20:17:01,814: INFO/MainProcess] Received task: create_task[8HRL6C0G14MT]  
+[2021-11-12 20:17:01,826: INFO/MainProcess] Received task: create_task[QGIKUBKCPPY1]  
+[2021-11-12 20:17:11,721: INFO/ForkPoolWorker-1] Task create_task[0BCYLCHHRJGA] succeeded in 10.015818200001377s: 'worked for 10 secs task id '
+[2021-11-12 20:17:11,745: INFO/MainProcess] Received task: create_task[48XGLJIRVX03]  
+[2021-11-12 20:17:11,774: INFO/ForkPoolWorker-3] Task create_task[YZ1RCDP2TTFH] succeeded in 10.013164300002245s: 'worked for 10 secs task id '
+[2021-11-12 20:17:11,783: INFO/MainProcess] Received task: create_task[8CL0MPS283BK]  
+[2021-11-12 20:17:11,812: INFO/ForkPoolWorker-2] Task create_task[CMTHX8KL0DKL] succeeded in 10.016324000000168s: 'worked for 10 secs task id '
+[2021-11-12 20:17:11,831: INFO/MainProcess] Received task: create_task[RMYLKMTYX21L]  
+[2021-11-12 20:17:11,836: INFO/ForkPoolWorker-4] Task create_task[PYHQUWRS183B] succeeded in 10.014017699999386s: 'worked for 10 secs task id '
+[2021-11-12 20:17:11,853: INFO/MainProcess] Received task: create_task[I5SAAMIB3YW7]  
+[2021-11-12 20:17:21,751: INFO/ForkPoolWorker-1] Task create_task[W8IF6IHJ3GCH] succeeded in 10.020320499999798s: 'worked for 10 secs task id '
+[2021-11-12 20:17:21,773: INFO/MainProcess] Received task: create_task[AHC1MBCZ62HX]  
+[2021-11-12 20:17:21,792: INFO/ForkPoolWorker-3] Task create_task[8HRL6C0G14MT] succeeded in 10.013952900000731s: 'worked for 10 secs task id '
+[2021-11-12 20:17:21,802: INFO/MainProcess] Received task: create_task[AUYF81A4QSUW]  
+[2021-11-12 20:17:21,831: INFO/ForkPoolWorker-2] Task create_task[QGIKUBKCPPY1] succeeded in 10.01269869999669s: 'worked for 10 secs task id '
+[2021-11-12 20:17:21,844: INFO/MainProcess] Received task: create_task[STRBWQL38DC5]  
+[2021-11-12 20:17:21,862: INFO/ForkPoolWorker-4] Task create_task[48XGLJIRVX03] succeeded in 10.016203199997108s: 'worked for 10 secs task id '
+[2021-11-12 20:17:21,872: INFO/MainProcess] Received task: create_task[Q18WT05HGQUK]  
+[2021-11-12 20:17:31,782: INFO/ForkPoolWorker-1] Task create_task[8CL0MPS283BK] succeeded in 10.019879800001945s: 'worked for 10 secs task id '
+[2021-11-12 20:17:31,804: INFO/MainProcess] Received task: create_task[0ZHYJ9WDDOPH]  
+[2021-11-12 20:17:31,814: INFO/ForkPoolWorker-3] Task create_task[RMYLKMTYX21L] succeeded in 10.01736130000063s: 'worked for 10 secs task id '
+[2021-11-12 20:17:31,828: INFO/MainProcess] Received task: create_task[IMXG2O8IOUH8]  
+[2021-11-12 20:17:31,854: INFO/ForkPoolWorker-2] Task create_task[I5SAAMIB3YW7] succeeded in 10.01791520000188s: 'worked for 10 secs task id '
+[2021-11-12 20:17:31,870: INFO/MainProcess] Received task: create_task[6CX2W3LMF0MQ]  
+[2021-11-12 20:17:31,874: INFO/ForkPoolWorker-4] Task create_task[AHC1MBCZ62HX] succeeded in 10.007544000000053s: 'worked for 10 secs task id '
+[2021-11-12 20:17:31,884: INFO/MainProcess] Received task: create_task[YOLJXJ7IPZ1P]  
+[2021-11-12 20:17:41,811: INFO/ForkPoolWorker-1] Task create_task[AUYF81A4QSUW] succeeded in 10.018321199997445s: 'worked for 10 secs task id '
+[2021-11-12 20:17:41,817: INFO/MainProcess] Received task: create_task[1IW1OBOKIYS4]  
+[2021-11-12 20:17:41,833: INFO/ForkPoolWorker-3] Task create_task[STRBWQL38DC5] succeeded in 10.010737300002802s: 'worked for 10 secs task id '
+[2021-11-12 20:17:41,852: INFO/MainProcess] Received task: create_task[WC73J0A6DPYW]  
+[2021-11-12 20:17:41,872: INFO/ForkPoolWorker-2] Task create_task[Q18WT05HGQUK] succeeded in 10.010672700002033s: 'worked for 10 secs task id '
+[2021-11-12 20:17:41,882: INFO/MainProcess] Received task: create_task[THUKKMIT0AA4]  
+[2021-11-12 20:17:41,892: INFO/ForkPoolWorker-4] Task create_task[0ZHYJ9WDDOPH] succeeded in 10.012537700000394s: 'worked for 10 secs task id '
+[2021-11-12 20:17:41,902: INFO/MainProcess] Received task: create_task[Z9P9MFTZNT7W]  
+[2021-11-12 20:17:51,830: INFO/ForkPoolWorker-1] Task create_task[IMXG2O8IOUH8] succeeded in 10.01532959999895s: 'worked for 10 secs task id '
+[2021-11-12 20:17:51,841: INFO/MainProcess] Received task: create_task[UDQJCBZU1E88]  
+[2021-11-12 20:17:51,858: INFO/ForkPoolWorker-3] Task create_task[6CX2W3LMF0MQ] succeeded in 10.016647100001137s: 'worked for 10 secs task id '
+[2021-11-12 20:17:51,865: INFO/MainProcess] Received task: create_task[IXDPGCS1V8BD]  
+[2021-11-12 20:17:51,881: INFO/ForkPoolWorker-2] Task create_task[YOLJXJ7IPZ1P] succeeded in 10.004607300001226s: 'worked for 10 secs task id '
+[2021-11-12 20:17:51,889: INFO/MainProcess] Received task: create_task[GSSMB216FTWV]  
+[2021-11-12 20:17:51,912: INFO/ForkPoolWorker-4] Task create_task[1IW1OBOKIYS4] succeeded in 10.014835000001767s: 'worked for 10 secs task id '
+[2021-11-12 20:17:51,919: INFO/MainProcess] Received task: create_task[0OQCVUTG1JVH]  
+[2021-11-12 20:18:01,851: INFO/ForkPoolWorker-1] Task create_task[WC73J0A6DPYW] succeeded in 10.014047100001335s: 'worked for 10 secs task id '
+[2021-11-12 20:18:01,858: INFO/MainProcess] Received task: create_task[8TSWXFMIH6RG]  
+[2021-11-12 20:18:01,873: INFO/ForkPoolWorker-3] Task create_task[THUKKMIT0AA4] succeeded in 10.011852600000566s: 'worked for 10 secs task id '
+[2021-11-12 20:18:01,881: INFO/MainProcess] Received task: create_task[Z31Z00N9EK6S]  
+[2021-11-12 20:18:01,891: INFO/ForkPoolWorker-2] Task create_task[Z9P9MFTZNT7W] succeeded in 10.006316399998468s: 'worked for 10 secs task id '
+[2021-11-12 20:18:01,899: INFO/MainProcess] Received task: create_task[M6SA1QLH2VU4]  
+[2021-11-12 20:18:01,921: INFO/ForkPoolWorker-4] Task create_task[UDQJCBZU1E88] succeeded in 10.00585200000205s: 'worked for 10 secs task id '
+[2021-11-12 20:18:01,929: INFO/MainProcess] Received task: create_task[47DE9Z8V1OIM]  
+[2021-11-12 20:18:11,871: INFO/ForkPoolWorker-1] Task create_task[IXDPGCS1V8BD] succeeded in 10.016207900000154s: 'worked for 10 secs task id '
+[2021-11-12 20:18:11,884: INFO/ForkPoolWorker-3] Task create_task[GSSMB216FTWV] succeeded in 10.007891799999925s: 'worked for 10 secs task id '
+[2021-11-12 20:18:11,895: INFO/MainProcess] Received task: create_task[H3SQ7A9YY1YY]  
+[2021-11-12 20:18:11,906: INFO/ForkPoolWorker-2] Task create_task[0OQCVUTG1JVH] succeeded in 10.011366299997462s: 'worked for 10 secs task id '
+[2021-11-12 20:18:11,916: INFO/MainProcess] Received task: create_task[UGZF8N6Q9ABC]  
+[2021-11-12 20:18:11,931: INFO/MainProcess] Received task: create_task[IWP2HF5MRCNY]  
+[2021-11-12 20:18:11,932: INFO/ForkPoolWorker-4] Task create_task[8TSWXFMIH6RG] succeeded in 10.007323899997573s: 'worked for 10 secs task id '
+[2021-11-12 20:18:11,943: INFO/MainProcess] Received task: create_task[X3P6WU8KZQQM]  
+[2021-11-12 20:18:21,900: INFO/ForkPoolWorker-1] Task create_task[Z31Z00N9EK6S] succeeded in 10.019471400002658s: 'worked for 10 secs task id '
+[2021-11-12 20:18:21,907: INFO/MainProcess] Received task: create_task[H9HQQTKJ9BPK]  
+[2021-11-12 20:18:21,921: INFO/ForkPoolWorker-3] Task create_task[M6SA1QLH2VU4] succeeded in 10.014403299999685s: 'worked for 10 secs task id '
+[2021-11-12 20:18:21,928: INFO/MainProcess] Received task: create_task[Y9AHK7XR6AQW]  
+[2021-11-12 20:18:21,931: INFO/ForkPoolWorker-2] Task create_task[47DE9Z8V1OIM] succeeded in 10.009117200002947s: 'worked for 10 secs task id '
+[2021-11-12 20:18:21,937: INFO/MainProcess] Received task: create_task[RM8U0ZMMTUYA]  
+[2021-11-12 20:18:21,951: INFO/ForkPoolWorker-4] Task create_task[H3SQ7A9YY1YY] succeeded in 10.012981600000785s: 'worked for 10 secs task id '
+[2021-11-12 20:18:21,958: INFO/MainProcess] Received task: create_task[3WC2ZMO17W9K]  
+[2021-11-12 20:18:31,911: INFO/ForkPoolWorker-1] Task create_task[UGZF8N6Q9ABC] succeeded in 10.007770600001095s: 'worked for 10 secs task id '
+[2021-11-12 20:18:31,919: INFO/MainProcess] Received task: create_task[S9JOI4EDU7J0]  
+[2021-11-12 20:18:31,931: INFO/ForkPoolWorker-3] Task create_task[IWP2HF5MRCNY] succeeded in 10.006415500000003s: 'worked for 10 secs task id '
+[2021-11-12 20:18:31,938: INFO/MainProcess] Received task: create_task[STC748R45L3T]  
+[2021-11-12 20:18:31,941: INFO/ForkPoolWorker-2] Task create_task[X3P6WU8KZQQM] succeeded in 10.00715990000026s: 'worked for 10 secs task id '
+[2021-11-12 20:18:31,948: INFO/MainProcess] Received task: create_task[N4ZJQ2CLOW9E]  
+[2021-11-12 20:18:31,962: INFO/ForkPoolWorker-4] Task create_task[H9HQQTKJ9BPK] succeeded in 10.00746000000072s: 'worked for 10 secs task id '
+[2021-11-12 20:18:31,969: INFO/MainProcess] Received task: create_task[4AGHGE95556D]  
+[2021-11-12 20:18:41,919: INFO/ForkPoolWorker-1] Task create_task[Y9AHK7XR6AQW] succeeded in 10.004100400001334s: 'worked for 10 secs task id '
+[2021-11-12 20:18:41,928: INFO/MainProcess] Received task: create_task[4TLH5W2HUEXC]  
+[2021-11-12 20:18:41,942: INFO/ForkPoolWorker-3] Task create_task[RM8U0ZMMTUYA] succeeded in 10.007621199998539s: 'worked for 10 secs task id '
+[2021-11-12 20:18:41,950: INFO/MainProcess] Received task: create_task[67MGVUSPRI32]  
+[2021-11-12 20:18:41,952: INFO/ForkPoolWorker-2] Task create_task[3WC2ZMO17W9K] succeeded in 10.007507599999371s: 'worked for 10 secs task id '
+[2021-11-12 20:18:41,963: INFO/MainProcess] Received task: create_task[OOXDXZ7P1ZCI]  
+[2021-11-12 20:18:41,971: INFO/ForkPoolWorker-4] Task create_task[S9JOI4EDU7J0] succeeded in 10.00654460000078s: 'worked for 10 secs task id '
+[2021-11-12 20:18:41,979: INFO/MainProcess] Received task: create_task[0S5AN12NX79S]  
+[2021-11-12 20:18:51,932: INFO/ForkPoolWorker-1] Task create_task[STC748R45L3T] succeeded in 10.008657399997901s: 'worked for 10 secs task id '
+[2021-11-12 20:18:51,952: INFO/ForkPoolWorker-3] Task create_task[N4ZJQ2CLOW9E] succeeded in 10.006548099998327s: 'worked for 10 secs task id '
+[2021-11-12 20:18:51,974: INFO/ForkPoolWorker-2] Task create_task[4AGHGE95556D] succeeded in 10.017643999999564s: 'worked for 10 secs task id '
+[2021-11-12 20:18:51,982: INFO/ForkPoolWorker-4] Task create_task[4TLH5W2HUEXC] succeeded in 10.006477399998403s: 'worked for 10 secs task id '
+[2021-11-12 20:18:56,499: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:18:56,512: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:18:57,540: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:18:57,564: INFO/MainProcess] celery@7ccfc9c4885f ready.
+[2021-11-12 20:18:59,684: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:20:48,469: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:20:48,483: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:20:49,522: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:20:49,539: INFO/MainProcess] celery@7ccfc9c4885f ready.
+[2021-11-12 20:20:49,689: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:21:40,820: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:21:40,854: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:21:41,942: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:21:41,982: INFO/MainProcess] celery@7ccfc9c4885f ready.
+[2021-11-12 20:21:41,988: INFO/MainProcess] Received task: create_task[57f62495-6f13-41b8-a3e1-227e2a79ed1b]  
+[2021-11-12 20:21:42,002: ERROR/ForkPoolWorker-1] Task create_task[57f62495-6f13-41b8-a3e1-227e2a79ed1b] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'user'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 19, in create_task
+    create_task.apply_async((duration, ), task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'user'
+[2021-11-12 20:21:44,685: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:21:57,518: INFO/MainProcess] Received task: create_task[78d4f962-a81d-4e78-96d2-a01ebfe4bce8]  
+[2021-11-12 20:21:57,526: ERROR/ForkPoolWorker-1] Task create_task[78d4f962-a81d-4e78-96d2-a01ebfe4bce8] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'user'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 19, in create_task
+    create_task.apply_async((duration, ), task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'user'
+[2021-11-12 20:23:23,859: INFO/MainProcess] Received task: create_task[8e900d73-e685-48a3-9a1d-bd3445511392]  
+[2021-11-12 20:23:23,894: ERROR/ForkPoolWorker-1] Task create_task[8e900d73-e685-48a3-9a1d-bd3445511392] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'user'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 19, in create_task
+    create_task.apply_async((duration, user), task_id=taskid)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 531, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: create_task() missing 1 required positional argument: 'user'
+[2021-11-12 20:23:42,383: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:23:42,398: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:23:43,429: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:23:48,558: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:23:48,570: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:23:49,598: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:23:49,628: INFO/MainProcess] celery@7ccfc9c4885f ready.
+[2021-11-12 20:23:56,886: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:23:56,901: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:23:57,929: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:23:57,949: INFO/MainProcess] celery@7ccfc9c4885f ready.
+[2021-11-12 20:24:01,991: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:24:11,362: INFO/MainProcess] Received task: create_task[ae6c47a5-2dc4-4dc9-a1d7-2c5141bd5fdd]  
+[2021-11-12 20:24:11,439: INFO/MainProcess] Received task: create_task[HIQMZLSGN5WO]  
+[2021-11-12 20:24:11,540: INFO/MainProcess] Received task: create_task[A3OK34V5IVC7]  
+[2021-11-12 20:24:11,602: INFO/MainProcess] Received task: create_task[H1VSM0FGVRB9]  
+[2021-11-12 20:24:11,660: INFO/MainProcess] Received task: create_task[OBJY0JP0BSUT]  
+[2021-11-12 20:24:21,452: INFO/ForkPoolWorker-1] Task create_task[ae6c47a5-2dc4-4dc9-a1d7-2c5141bd5fdd] succeeded in 10.084823800003505s: 'worked for 10 secs task id '
+[2021-11-12 20:24:21,460: INFO/MainProcess] Received task: create_task[JLPEC04AWFNZ]  
+[2021-11-12 20:24:21,553: INFO/ForkPoolWorker-3] Task create_task[HIQMZLSGN5WO] succeeded in 10.078581300000224s: 'worked for 10 secs task id '
+[2021-11-12 20:24:21,563: INFO/MainProcess] Received task: create_task[IMONP0UUYO43]  
+[2021-11-12 20:24:21,613: INFO/ForkPoolWorker-2] Task create_task[A3OK34V5IVC7] succeeded in 10.067882699997426s: 'worked for 10 secs task id '
+[2021-11-12 20:24:21,620: INFO/MainProcess] Received task: create_task[Q9T0IWQMNUF7]  
+[2021-11-12 20:24:21,672: INFO/ForkPoolWorker-4] Task create_task[H1VSM0FGVRB9] succeeded in 10.065878200002771s: 'worked for 10 secs task id '
+[2021-11-12 20:24:21,682: INFO/MainProcess] Received task: create_task[7RBOIKZJTD6L]  
+[2021-11-12 20:24:31,468: INFO/ForkPoolWorker-1] Task create_task[OBJY0JP0BSUT] succeeded in 10.011993700001767s: 'worked for 10 secs task id '
+[2021-11-12 20:24:31,476: INFO/MainProcess] Received task: create_task[V4AMANKBM7Q5]  
+[2021-11-12 20:24:31,573: INFO/ForkPoolWorker-3] Task create_task[JLPEC04AWFNZ] succeeded in 10.01406710000083s: 'worked for 10 secs task id '
+[2021-11-12 20:24:31,579: INFO/MainProcess] Received task: create_task[YKKYMPSVZCV6]  
+[2021-11-12 20:24:31,631: INFO/ForkPoolWorker-2] Task create_task[IMONP0UUYO43] succeeded in 10.014186600001267s: 'worked for 10 secs task id '
+[2021-11-12 20:24:31,638: INFO/MainProcess] Received task: create_task[QJ5EZ1T4T5NF]  
+[2021-11-12 20:24:31,682: INFO/ForkPoolWorker-4] Task create_task[Q9T0IWQMNUF7] succeeded in 10.004834400002437s: 'worked for 10 secs task id '
+[2021-11-12 20:24:31,688: INFO/MainProcess] Received task: create_task[VGJEIMOOUMVQ]  
+[2021-11-12 20:24:41,485: INFO/ForkPoolWorker-1] Task create_task[7RBOIKZJTD6L] succeeded in 10.013749099998677s: 'worked for 10 secs task id '
+[2021-11-12 20:24:41,493: INFO/MainProcess] Received task: create_task[CTDYJF0P6WY3]  
+[2021-11-12 20:24:41,582: INFO/ForkPoolWorker-3] Task create_task[V4AMANKBM7Q5] succeeded in 10.005959900001471s: 'worked for 10 secs task id '
+[2021-11-12 20:24:41,591: INFO/MainProcess] Received task: create_task[32E76ATWUH4L]  
+[2021-11-12 20:24:41,648: INFO/ForkPoolWorker-2] Task create_task[YKKYMPSVZCV6] succeeded in 10.013886900000216s: 'worked for 10 secs task id '
+[2021-11-12 20:24:41,655: INFO/MainProcess] Received task: create_task[1LIEMTB30AZT]  
+[2021-11-12 20:24:41,691: INFO/ForkPoolWorker-4] Task create_task[QJ5EZ1T4T5NF] succeeded in 10.006231399998796s: 'worked for 10 secs task id '
+[2021-11-12 20:24:41,698: INFO/MainProcess] Received task: create_task[QB4B4O1AIE4G]  
+[2021-11-12 20:24:51,506: INFO/ForkPoolWorker-1] Task create_task[VGJEIMOOUMVQ] succeeded in 10.017097699997976s: 'worked for 10 secs task id '
+[2021-11-12 20:24:51,533: INFO/MainProcess] Received task: create_task[YN0PRACJF4UJ]  
+[2021-11-12 20:24:51,593: INFO/ForkPoolWorker-3] Task create_task[CTDYJF0P6WY3] succeeded in 10.006842899998446s: 'worked for 10 secs task id '
+[2021-11-12 20:24:51,608: INFO/MainProcess] Received task: create_task[F3P979D3W7E4]  
+[2021-11-12 20:24:51,661: INFO/ForkPoolWorker-2] Task create_task[32E76ATWUH4L] succeeded in 10.009733800001413s: 'worked for 10 secs task id '
+[2021-11-12 20:24:51,669: INFO/MainProcess] Received task: create_task[DJLEO2MVMCS2]  
+[2021-11-12 20:24:51,701: INFO/ForkPoolWorker-4] Task create_task[1LIEMTB30AZT] succeeded in 10.006662600000709s: 'worked for 10 secs task id '
+[2021-11-12 20:24:51,708: INFO/MainProcess] Received task: create_task[MD56CIC19C3P]  
+[2021-11-12 20:25:01,531: INFO/ForkPoolWorker-1] Task create_task[QB4B4O1AIE4G] succeeded in 10.013310000002093s: 'worked for 10 secs task id '
+[2021-11-12 20:25:01,538: INFO/MainProcess] Received task: create_task[VL679YUVU42Q]  
+[2021-11-12 20:25:01,611: INFO/ForkPoolWorker-3] Task create_task[YN0PRACJF4UJ] succeeded in 10.009786800001166s: 'worked for 10 secs task id '
+[2021-11-12 20:25:01,618: INFO/MainProcess] Received task: create_task[4ZG5JN7AYMKH]  
+[2021-11-12 20:25:01,678: INFO/ForkPoolWorker-2] Task create_task[F3P979D3W7E4] succeeded in 10.014077600000746s: 'worked for 10 secs task id '
+[2021-11-12 20:25:01,685: INFO/MainProcess] Received task: create_task[XNJGF0XWPVSP]  
+[2021-11-12 20:25:01,711: INFO/ForkPoolWorker-4] Task create_task[DJLEO2MVMCS2] succeeded in 10.007178599997133s: 'worked for 10 secs task id '
+[2021-11-12 20:25:01,718: INFO/MainProcess] Received task: create_task[04SIQK3GIV3Q]  
+[2021-11-12 20:25:11,549: INFO/ForkPoolWorker-1] Task create_task[MD56CIC19C3P] succeeded in 10.013913500002673s: 'worked for 10 secs task id '
+[2021-11-12 20:25:11,556: INFO/MainProcess] Received task: create_task[DIZJ5PP1KZX2]  
+[2021-11-12 20:25:11,624: INFO/ForkPoolWorker-3] Task create_task[VL679YUVU42Q] succeeded in 10.009327399999165s: 'worked for 10 secs task id '
+[2021-11-12 20:25:11,653: INFO/MainProcess] Received task: create_task[U5AYXI40G3T7]  
+[2021-11-12 20:25:11,693: INFO/ForkPoolWorker-2] Task create_task[4ZG5JN7AYMKH] succeeded in 10.010648500003299s: 'worked for 10 secs task id '
+[2021-11-12 20:25:11,708: INFO/MainProcess] Received task: create_task[SYPM4UG3UE2N]  
+[2021-11-12 20:25:11,722: INFO/ForkPoolWorker-4] Task create_task[XNJGF0XWPVSP] succeeded in 10.007837600001949s: 'worked for 10 secs task id '
+[2021-11-12 20:25:11,735: INFO/MainProcess] Received task: create_task[HLU6RAD31CX7]  
+[2021-11-12 20:25:21,566: INFO/ForkPoolWorker-1] Task create_task[04SIQK3GIV3Q] succeeded in 10.013624700000946s: 'worked for 10 secs task id '
+[2021-11-12 20:25:21,575: INFO/MainProcess] Received task: create_task[0HF69F5V1JTU]  
+[2021-11-12 20:25:21,656: INFO/ForkPoolWorker-3] Task create_task[DIZJ5PP1KZX2] succeeded in 10.020482299998548s: 'worked for 10 secs task id '
+[2021-11-12 20:25:21,663: INFO/MainProcess] Received task: create_task[C64C8DJRCLCO]  
+[2021-11-12 20:25:21,711: INFO/ForkPoolWorker-2] Task create_task[U5AYXI40G3T7] succeeded in 10.011991399998806s: 'worked for 10 secs task id '
+[2021-11-12 20:25:21,718: INFO/MainProcess] Received task: create_task[136AUZ6QKB4M]  
+[2021-11-12 20:25:21,744: INFO/ForkPoolWorker-4] Task create_task[SYPM4UG3UE2N] succeeded in 10.015519600001426s: 'worked for 10 secs task id '
+[2021-11-12 20:25:21,751: INFO/MainProcess] Received task: create_task[59TMU9VJ2GOU]  
+[2021-11-12 20:25:31,581: INFO/ForkPoolWorker-1] Task create_task[HLU6RAD31CX7] succeeded in 10.011024200000975s: 'worked for 10 secs task id '
+[2021-11-12 20:25:31,589: INFO/MainProcess] Received task: create_task[HHGVQS39LO6W]  
+[2021-11-12 20:25:31,667: INFO/ForkPoolWorker-3] Task create_task[0HF69F5V1JTU] succeeded in 10.007870900000853s: 'worked for 10 secs task id '
+[2021-11-12 20:25:31,674: INFO/MainProcess] Received task: create_task[K7LZSOPLC7I0]  
+[2021-11-12 20:25:31,729: INFO/ForkPoolWorker-2] Task create_task[C64C8DJRCLCO] succeeded in 10.014213499998732s: 'worked for 10 secs task id '
+[2021-11-12 20:25:31,740: INFO/MainProcess] Received task: create_task[BMOA8FRBJJIM]  
+[2021-11-12 20:25:31,752: INFO/ForkPoolWorker-4] Task create_task[136AUZ6QKB4M] succeeded in 10.004521900002146s: 'worked for 10 secs task id '
+[2021-11-12 20:25:31,761: INFO/MainProcess] Received task: create_task[OVKBTLFK4ZNT]  
+[2021-11-12 20:25:41,599: INFO/ForkPoolWorker-1] Task create_task[59TMU9VJ2GOU] succeeded in 10.013683900000615s: 'worked for 10 secs task id '
+[2021-11-12 20:25:41,606: INFO/MainProcess] Received task: create_task[NWEGEE1BLZWR]  
+[2021-11-12 20:25:41,684: INFO/ForkPoolWorker-3] Task create_task[HHGVQS39LO6W] succeeded in 10.013961699998617s: 'worked for 10 secs task id '
+[2021-11-12 20:25:41,694: INFO/MainProcess] Received task: create_task[TL9ICTG7PYDR]  
+[2021-11-12 20:25:41,742: INFO/ForkPoolWorker-2] Task create_task[K7LZSOPLC7I0] succeeded in 10.007664799999475s: 'worked for 10 secs task id '
+[2021-11-12 20:25:41,750: INFO/MainProcess] Received task: create_task[MSTXAHXACV4G]  
+[2021-11-12 20:25:41,761: INFO/ForkPoolWorker-4] Task create_task[BMOA8FRBJJIM] succeeded in 10.005477400001837s: 'worked for 10 secs task id '
+[2021-11-12 20:25:41,769: INFO/MainProcess] Received task: create_task[4TGZDYPV1FCF]  
+[2021-11-12 20:25:51,616: INFO/ForkPoolWorker-1] Task create_task[OVKBTLFK4ZNT] succeeded in 10.013911000001826s: 'worked for 10 secs task id '
+[2021-11-12 20:25:51,633: INFO/MainProcess] Received task: create_task[ITG6AAKDON6R]  
+[2021-11-12 20:25:51,701: INFO/ForkPoolWorker-3] Task create_task[NWEGEE1BLZWR] succeeded in 10.012349600001471s: 'worked for 10 secs task id '
+[2021-11-12 20:25:51,710: INFO/MainProcess] Received task: create_task[BU38NSDHRHA6]  
+[2021-11-12 20:25:51,761: INFO/ForkPoolWorker-2] Task create_task[TL9ICTG7PYDR] succeeded in 10.014763399998628s: 'worked for 10 secs task id '
+[2021-11-12 20:25:51,772: INFO/ForkPoolWorker-4] Task create_task[MSTXAHXACV4G] succeeded in 10.006951100000151s: 'worked for 10 secs task id '
+[2021-11-12 20:25:51,774: INFO/MainProcess] Received task: create_task[56QWY8YYQGUP]  
+[2021-11-12 20:25:51,789: INFO/MainProcess] Received task: create_task[97JCNR2531QN]  
+[2021-11-12 20:26:01,639: INFO/ForkPoolWorker-1] Task create_task[4TGZDYPV1FCF] succeeded in 10.011557400001038s: 'worked for 10 secs task id '
+[2021-11-12 20:26:01,663: INFO/MainProcess] Received task: create_task[C99BPI9QGK9V]  
+[2021-11-12 20:26:01,723: INFO/ForkPoolWorker-3] Task create_task[ITG6AAKDON6R] succeeded in 10.018241699999635s: 'worked for 10 secs task id '
+[2021-11-12 20:26:01,739: INFO/MainProcess] Received task: create_task[WR9HSZJG7M0G]  
+[2021-11-12 20:26:01,791: INFO/ForkPoolWorker-2] Task create_task[BU38NSDHRHA6] succeeded in 10.024258500001451s: 'worked for 10 secs task id '
+[2021-11-12 20:26:01,804: INFO/ForkPoolWorker-4] Task create_task[56QWY8YYQGUP] succeeded in 10.022037399998226s: 'worked for 10 secs task id '
+[2021-11-12 20:26:01,812: INFO/MainProcess] Received task: create_task[TY3T5K91CL5H]  
+[2021-11-12 20:26:01,825: INFO/MainProcess] Received task: create_task[YT14PQMUETMG]  
+[2021-11-12 20:26:11,670: INFO/ForkPoolWorker-1] Task create_task[97JCNR2531QN] succeeded in 10.016731499999878s: 'worked for 10 secs task id '
+[2021-11-12 20:26:11,678: INFO/MainProcess] Received task: create_task[4ZKT6ZR8X9OP]  
+[2021-11-12 20:26:11,749: INFO/ForkPoolWorker-3] Task create_task[C99BPI9QGK9V] succeeded in 10.019161999996868s: 'worked for 10 secs task id '
+[2021-11-12 20:26:11,762: INFO/MainProcess] Received task: create_task[HHWW25TF54BY]  
+[2021-11-12 20:26:11,821: INFO/ForkPoolWorker-2] Task create_task[WR9HSZJG7M0G] succeeded in 10.021659800000634s: 'worked for 10 secs task id '
+[2021-11-12 20:26:11,832: INFO/ForkPoolWorker-4] Task create_task[TY3T5K91CL5H] succeeded in 10.011687400001392s: 'worked for 10 secs task id '
+[2021-11-12 20:26:11,832: INFO/MainProcess] Received task: create_task[QGN8BNF7FR6A]  
+[2021-11-12 20:26:11,842: INFO/MainProcess] Received task: create_task[P0ZIGVYF18MA]  
+[2021-11-12 20:26:21,682: INFO/ForkPoolWorker-1] Task create_task[YT14PQMUETMG] succeeded in 10.007788700000674s: 'worked for 10 secs task id '
+[2021-11-12 20:26:21,693: INFO/MainProcess] Received task: create_task[87HVF8UE1PEO]  
+[2021-11-12 20:26:21,762: INFO/ForkPoolWorker-3] Task create_task[4ZKT6ZR8X9OP] succeeded in 10.005035099999077s: 'worked for 10 secs task id '
+[2021-11-12 20:26:21,777: INFO/MainProcess] Received task: create_task[IOXZVTKF3IFA]  
+[2021-11-12 20:26:21,834: INFO/ForkPoolWorker-2] Task create_task[HHWW25TF54BY] succeeded in 10.007829700000002s: 'worked for 10 secs task id '
+[2021-11-12 20:26:21,843: INFO/MainProcess] Received task: create_task[PJK5NVTPSQ55]  
+[2021-11-12 20:26:21,848: INFO/ForkPoolWorker-4] Task create_task[QGN8BNF7FR6A] succeeded in 10.010832100000698s: 'worked for 10 secs task id '
+[2021-11-12 20:26:21,859: INFO/MainProcess] Received task: create_task[GSVIFXN5ONR1]  
+[2021-11-12 20:26:29,585: WARNING/MainProcess] Restoring 1 unacknowledged message(s)
+[2021-11-12 20:26:33,929: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:26:33,941: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:26:34,976: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:26:35,018: INFO/MainProcess] celery@7ccfc9c4885f ready.
+[2021-11-12 20:26:35,023: INFO/MainProcess] Received task: create_task[GSVIFXN5ONR1]  
+[2021-11-12 20:26:35,063: INFO/MainProcess] Received task: create_task[PLEGEW9V8LLG]  
+[2021-11-12 20:26:35,102: INFO/MainProcess] Received task: create_task[0JBTYRW5ZZ7T]  
+[2021-11-12 20:26:35,139: INFO/MainProcess] Received task: create_task[7ZXWYJNBQ1D6]  
+[2021-11-12 20:26:35,174: INFO/MainProcess] Received task: create_task[0WOV62NG68JI]  
+[2021-11-12 20:26:36,988: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:26:45,073: INFO/ForkPoolWorker-1] Task create_task[GSVIFXN5ONR1] succeeded in 10.047153200001048s: 'worked for 10 secs task id '
+[2021-11-12 20:26:45,081: INFO/MainProcess] Received task: create_task[NY0KSRRABVH2]  
+[2021-11-12 20:26:45,113: INFO/ForkPoolWorker-3] Task create_task[PLEGEW9V8LLG] succeeded in 10.04686220000076s: 'worked for 10 secs task id '
+[2021-11-12 20:26:45,123: INFO/MainProcess] Received task: create_task[CVPSWEKTYKLH]  
+[2021-11-12 20:26:45,143: INFO/ForkPoolWorker-2] Task create_task[0JBTYRW5ZZ7T] succeeded in 10.037642399998731s: 'worked for 10 secs task id '
+[2021-11-12 20:26:45,153: INFO/MainProcess] Received task: create_task[F5F263SYKOHL]  
+[2021-11-12 20:26:45,184: INFO/ForkPoolWorker-4] Task create_task[7ZXWYJNBQ1D6] succeeded in 10.042030600001453s: 'worked for 10 secs task id '
+[2021-11-12 20:26:45,192: INFO/MainProcess] Received task: create_task[LBV8WLO73SBK]  
+[2021-11-12 20:26:55,093: INFO/ForkPoolWorker-1] Task create_task[0WOV62NG68JI] succeeded in 10.015515099999902s: 'worked for 10 secs task id '
+[2021-11-12 20:26:55,132: INFO/ForkPoolWorker-3] Task create_task[NY0KSRRABVH2] succeeded in 10.013281200001074s: 'worked for 10 secs task id '
+[2021-11-12 20:26:55,152: INFO/ForkPoolWorker-2] Task create_task[CVPSWEKTYKLH] succeeded in 10.004885099999228s: 'worked for 10 secs task id '
+[2021-11-12 20:26:55,201: INFO/ForkPoolWorker-4] Task create_task[F5F263SYKOHL] succeeded in 10.013081599998259s: 'worked for 10 secs task id '
+[2021-11-12 20:27:03,296: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:27:03,351: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:27:04,421: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:27:04,458: INFO/MainProcess] celery@414d45a3ce79 ready.
+[2021-11-12 20:27:09,883: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:28:01,653: INFO/MainProcess] Received task: create_task[18e6c1ed-a1df-46fe-ae89-5cdd28d412f4]  
+[2021-11-12 20:28:01,769: INFO/MainProcess] Received task: create_task[Z42PZWHRH756]  
+[2021-11-12 20:28:01,889: INFO/MainProcess] Received task: create_task[M7QA8VT9O45E]  
+[2021-11-12 20:28:02,001: INFO/MainProcess] Received task: create_task[FI1IZX8YXN1C]  
+[2021-11-12 20:28:02,088: INFO/MainProcess] Received task: create_task[K41MWIPYQ73D]  
+[2021-11-12 20:28:11,794: INFO/ForkPoolWorker-1] Task create_task[18e6c1ed-a1df-46fe-ae89-5cdd28d412f4] succeeded in 10.131555100000696s: 'worked for 10 secs task id '
+[2021-11-12 20:28:11,809: INFO/MainProcess] Received task: create_task[5JKV5LCYS0DZ]  
+[2021-11-12 20:28:11,901: INFO/ForkPoolWorker-3] Task create_task[Z42PZWHRH756] succeeded in 10.117125500000839s: 'worked for 10 secs task id '
+[2021-11-12 20:28:11,908: INFO/MainProcess] Received task: create_task[GNEX0BFBVTS5]  
+[2021-11-12 20:28:12,019: INFO/ForkPoolWorker-2] Task create_task[M7QA8VT9O45E] succeeded in 10.121317699999054s: 'worked for 10 secs task id '
+[2021-11-12 20:28:12,045: INFO/MainProcess] Received task: create_task[2X1AD187JO72]  
+[2021-11-12 20:28:12,103: INFO/ForkPoolWorker-4] Task create_task[FI1IZX8YXN1C] succeeded in 10.097200500000326s: 'worked for 10 secs task id '
+[2021-11-12 20:28:12,139: INFO/MainProcess] Received task: create_task[AF8O8BRZN6DL]  
+[2021-11-12 20:28:21,816: INFO/ForkPoolWorker-1] Task create_task[K41MWIPYQ73D] succeeded in 10.014360300003318s: 'worked for 10 secs task id '
+[2021-11-12 20:28:21,843: INFO/MainProcess] Received task: create_task[9XN47RS1KRC2]  
+[2021-11-12 20:28:21,911: INFO/ForkPoolWorker-3] Task create_task[5JKV5LCYS0DZ] succeeded in 10.006496900001366s: 'worked for 10 secs task id '
+[2021-11-12 20:28:21,918: INFO/MainProcess] Received task: create_task[ZPTP105D8IQD]  
+[2021-11-12 20:28:22,056: INFO/ForkPoolWorker-2] Task create_task[GNEX0BFBVTS5] succeeded in 10.023661499999434s: 'worked for 10 secs task id '
+[2021-11-12 20:28:22,081: INFO/MainProcess] Received task: create_task[LR0B3BOZXTU3]  
+[2021-11-12 20:28:22,136: INFO/ForkPoolWorker-4] Task create_task[2X1AD187JO72] succeeded in 10.01085189999867s: 'worked for 10 secs task id '
+[2021-11-12 20:28:22,161: INFO/MainProcess] Received task: create_task[XW6464746LBF]  
+[2021-11-12 20:28:31,848: INFO/ForkPoolWorker-1] Task create_task[AF8O8BRZN6DL] succeeded in 10.020993699999963s: 'worked for 10 secs task id '
+[2021-11-12 20:28:31,855: INFO/MainProcess] Received task: create_task[R3Q7Y2MF5ACB]  
+[2021-11-12 20:28:31,928: INFO/ForkPoolWorker-3] Task create_task[9XN47RS1KRC2] succeeded in 10.013689899999008s: 'worked for 10 secs task id '
+[2021-11-12 20:28:31,935: INFO/MainProcess] Received task: create_task[XYALR3W9NVO7]  
+[2021-11-12 20:28:32,083: INFO/ForkPoolWorker-2] Task create_task[ZPTP105D8IQD] succeeded in 10.01589420000164s: 'worked for 10 secs task id '
+[2021-11-12 20:28:32,098: INFO/MainProcess] Received task: create_task[QNE0DMPACYJ1]  
+[2021-11-12 20:28:32,161: INFO/ForkPoolWorker-4] Task create_task[LR0B3BOZXTU3] succeeded in 10.015088899999682s: 'worked for 10 secs task id '
+[2021-11-12 20:28:32,169: INFO/MainProcess] Received task: create_task[QJGU3AH49Y1P]  
+[2021-11-12 20:28:41,862: INFO/ForkPoolWorker-1] Task create_task[XW6464746LBF] succeeded in 10.01003579999815s: 'worked for 10 secs task id '
+[2021-11-12 20:28:41,873: INFO/MainProcess] Received task: create_task[EPBHG6OU7FGW]  
+[2021-11-12 20:28:41,942: INFO/ForkPoolWorker-3] Task create_task[R3Q7Y2MF5ACB] succeeded in 10.010062900000776s: 'worked for 10 secs task id '
+[2021-11-12 20:28:41,948: INFO/MainProcess] Received task: create_task[8BOQXU3X0QJ2]  
+[2021-11-12 20:28:42,105: INFO/ForkPoolWorker-2] Task create_task[XYALR3W9NVO7] succeeded in 10.016240100001596s: 'worked for 10 secs task id '
+[2021-11-12 20:28:42,112: INFO/MainProcess] Received task: create_task[VW3MVF6D4M7Z]  
+[2021-11-12 20:28:42,171: INFO/ForkPoolWorker-4] Task create_task[QNE0DMPACYJ1] succeeded in 10.006495900001028s: 'worked for 10 secs task id '
+[2021-11-12 20:28:42,177: INFO/MainProcess] Received task: create_task[5PMNNBXI73Z4]  
+[2021-11-12 20:28:51,881: INFO/ForkPoolWorker-1] Task create_task[QJGU3AH49Y1P] succeeded in 10.014374899998074s: 'worked for 10 secs task id '
+[2021-11-12 20:28:51,888: INFO/MainProcess] Received task: create_task[J5CUTDW4LDGC]  
+[2021-11-12 20:28:51,958: INFO/ForkPoolWorker-3] Task create_task[EPBHG6OU7FGW] succeeded in 10.013239399999293s: 'worked for 10 secs task id '
+[2021-11-12 20:28:51,966: INFO/MainProcess] Received task: create_task[K3MVGSQ5CGZP]  
+[2021-11-12 20:28:52,122: INFO/ForkPoolWorker-2] Task create_task[8BOQXU3X0QJ2] succeeded in 10.013228799998615s: 'worked for 10 secs task id '
+[2021-11-12 20:28:52,128: INFO/MainProcess] Received task: create_task[DWKIDC73CFGE]  
+[2021-11-12 20:28:52,182: INFO/ForkPoolWorker-4] Task create_task[VW3MVF6D4M7Z] succeeded in 10.007853999999497s: 'worked for 10 secs task id '
+[2021-11-12 20:28:52,189: INFO/MainProcess] Received task: create_task[OCADJIJEDCVF]  
+[2021-11-12 20:29:01,898: INFO/ForkPoolWorker-1] Task create_task[5PMNNBXI73Z4] succeeded in 10.01406180000049s: 'worked for 10 secs task id '
+[2021-11-12 20:29:01,909: INFO/MainProcess] Received task: create_task[1PF2H85HM5D9]  
+[2021-11-12 20:29:01,976: INFO/ForkPoolWorker-3] Task create_task[J5CUTDW4LDGC] succeeded in 10.013949899999716s: 'worked for 10 secs task id '
+[2021-11-12 20:29:01,983: INFO/MainProcess] Received task: create_task[WH1YQXROLIMB]  
+[2021-11-12 20:29:02,138: INFO/ForkPoolWorker-2] Task create_task[K3MVGSQ5CGZP] succeeded in 10.013558900001954s: 'worked for 10 secs task id '
+[2021-11-12 20:29:02,145: INFO/MainProcess] Received task: create_task[4BJSP8FUDOQL]  
+[2021-11-12 20:29:02,192: INFO/ForkPoolWorker-4] Task create_task[DWKIDC73CFGE] succeeded in 10.006479199997557s: 'worked for 10 secs task id '
+[2021-11-12 20:29:02,202: INFO/MainProcess] Received task: create_task[OP0IEWEU58OX]  
+[2021-11-12 20:29:11,915: INFO/ForkPoolWorker-1] Task create_task[OCADJIJEDCVF] succeeded in 10.01204510000025s: 'worked for 10 secs task id '
+[2021-11-12 20:29:11,934: INFO/MainProcess] Received task: create_task[3TRP07LQILQA]  
+[2021-11-12 20:29:11,995: INFO/ForkPoolWorker-3] Task create_task[1PF2H85HM5D9] succeeded in 10.015483800001675s: 'worked for 10 secs task id '
+[2021-11-12 20:29:12,009: INFO/MainProcess] Received task: create_task[ZN188XNKT2G9]  
+[2021-11-12 20:29:12,152: INFO/ForkPoolWorker-2] Task create_task[WH1YQXROLIMB] succeeded in 10.00989059999847s: 'worked for 10 secs task id '
+[2021-11-12 20:29:12,158: INFO/MainProcess] Received task: create_task[X60NAMT0SYUS]  
+[2021-11-12 20:29:12,208: INFO/ForkPoolWorker-4] Task create_task[4BJSP8FUDOQL] succeeded in 10.011509599997225s: 'worked for 10 secs task id '
+[2021-11-12 20:29:12,215: INFO/MainProcess] Received task: create_task[NRGONRF62DAD]  
+[2021-11-12 20:29:21,942: INFO/ForkPoolWorker-1] Task create_task[OP0IEWEU58OX] succeeded in 10.017392500001733s: 'worked for 10 secs task id '
+[2021-11-12 20:29:22,006: INFO/MainProcess] Received task: create_task[3J88GFDTIUHY]  
+[2021-11-12 20:29:22,018: INFO/ForkPoolWorker-3] Task create_task[3TRP07LQILQA] succeeded in 10.016789200002677s: 'worked for 10 secs task id '
+[2021-11-12 20:29:22,105: INFO/MainProcess] Received task: create_task[TYMHIEOW69JE]  
+[2021-11-12 20:29:22,162: INFO/ForkPoolWorker-2] Task create_task[ZN188XNKT2G9] succeeded in 10.00709519999873s: 'worked for 10 secs task id '
+[2021-11-12 20:29:22,172: INFO/MainProcess] Received task: create_task[7QKK03M9TMWK]  
+[2021-11-12 20:29:22,222: INFO/ForkPoolWorker-4] Task create_task[X60NAMT0SYUS] succeeded in 10.010454300001584s: 'worked for 10 secs task id '
+[2021-11-12 20:29:22,232: INFO/MainProcess] Received task: create_task[F3BFSBEP4AO3]  
+[2021-11-12 20:29:32,015: INFO/ForkPoolWorker-1] Task create_task[NRGONRF62DAD] succeeded in 10.01467170000251s: 'worked for 10 secs task id '
+[2021-11-12 20:29:32,034: INFO/MainProcess] Received task: create_task[GFFXHEM8GMFI]  
+[2021-11-12 20:29:32,115: INFO/ForkPoolWorker-3] Task create_task[3J88GFDTIUHY] succeeded in 10.014958100000513s: 'worked for 10 secs task id '
+[2021-11-12 20:29:32,124: INFO/MainProcess] Received task: create_task[BKKYWTV7WNCP]  
+[2021-11-12 20:29:32,172: INFO/ForkPoolWorker-2] Task create_task[TYMHIEOW69JE] succeeded in 10.005300900000293s: 'worked for 10 secs task id '
+[2021-11-12 20:29:32,183: INFO/MainProcess] Received task: create_task[LY8QU4F63D19]  
+[2021-11-12 20:29:32,232: INFO/ForkPoolWorker-4] Task create_task[7QKK03M9TMWK] succeeded in 10.005362800002331s: 'worked for 10 secs task id '
+[2021-11-12 20:29:32,242: INFO/MainProcess] Received task: create_task[4719FQT9XT1V]  
+[2021-11-12 20:29:42,043: INFO/ForkPoolWorker-1] Task create_task[F3BFSBEP4AO3] succeeded in 10.01463750000039s: 'worked for 10 secs task id '
+[2021-11-12 20:29:42,051: INFO/MainProcess] Received task: create_task[098PBW12BXJY]  
+[2021-11-12 20:29:42,134: INFO/ForkPoolWorker-3] Task create_task[GFFXHEM8GMFI] succeeded in 10.014561600000889s: 'worked for 10 secs task id '
+[2021-11-12 20:29:42,141: INFO/MainProcess] Received task: create_task[ZI0EZUDCA32Q]  
+[2021-11-12 20:29:42,194: INFO/ForkPoolWorker-2] Task create_task[BKKYWTV7WNCP] succeeded in 10.015851100000873s: 'worked for 10 secs task id '
+[2021-11-12 20:29:42,219: INFO/MainProcess] Received task: create_task[80M7KYA73ZW3]  
+[2021-11-12 20:29:42,244: INFO/ForkPoolWorker-4] Task create_task[LY8QU4F63D19] succeeded in 10.006910799998877s: 'worked for 10 secs task id '
+[2021-11-12 20:29:42,256: INFO/MainProcess] Received task: create_task[ULSX3X0CCXTK]  
+[2021-11-12 20:29:52,051: INFO/ForkPoolWorker-1] Task create_task[4719FQT9XT1V] succeeded in 10.00408729999981s: 'worked for 10 secs task id '
+[2021-11-12 20:29:52,058: INFO/MainProcess] Received task: create_task[LW744I33FVHA]  
+[2021-11-12 20:29:52,141: INFO/ForkPoolWorker-3] Task create_task[098PBW12BXJY] succeeded in 10.003726499999175s: 'worked for 10 secs task id '
+[2021-11-12 20:29:52,149: INFO/MainProcess] Received task: create_task[UN9U43J1W9R2]  
+[2021-11-12 20:29:52,211: INFO/ForkPoolWorker-2] Task create_task[ZI0EZUDCA32Q] succeeded in 10.008994100000564s: 'worked for 10 secs task id '
+[2021-11-12 20:29:52,218: INFO/MainProcess] Received task: create_task[DHA77MKZT8H0]  
+[2021-11-12 20:29:52,262: INFO/ForkPoolWorker-4] Task create_task[80M7KYA73ZW3] succeeded in 10.013084700000036s: 'worked for 10 secs task id '
+[2021-11-12 20:29:52,270: INFO/MainProcess] Received task: create_task[TGL7BMLSU0MN]  
+[2021-11-12 20:30:02,068: INFO/ForkPoolWorker-1] Task create_task[ULSX3X0CCXTK] succeeded in 10.014098699997703s: 'worked for 10 secs task id '
+[2021-11-12 20:30:02,077: INFO/MainProcess] Received task: create_task[M6IXGN3RP01Q]  
+[2021-11-12 20:30:02,152: INFO/ForkPoolWorker-3] Task create_task[LW744I33FVHA] succeeded in 10.007104600001185s: 'worked for 10 secs task id '
+[2021-11-12 20:30:02,160: INFO/MainProcess] Received task: create_task[39TW4RV4X2SQ]  
+[2021-11-12 20:30:02,222: INFO/ForkPoolWorker-2] Task create_task[UN9U43J1W9R2] succeeded in 10.00661399999808s: 'worked for 10 secs task id '
+[2021-11-12 20:30:02,233: INFO/MainProcess] Received task: create_task[LD9MD6Z7PDZX]  
+[2021-11-12 20:30:02,272: INFO/ForkPoolWorker-4] Task create_task[DHA77MKZT8H0] succeeded in 10.005766300000687s: 'worked for 10 secs task id '
+[2021-11-12 20:30:02,284: INFO/MainProcess] Received task: create_task[WJ6EEUF06F46]  
+[2021-11-12 20:30:12,084: INFO/ForkPoolWorker-1] Task create_task[TGL7BMLSU0MN] succeeded in 10.011519899999257s: 'worked for 10 secs task id '
+[2021-11-12 20:30:12,108: INFO/MainProcess] Received task: create_task[2M7YP9ZXFWLJ]  
+[2021-11-12 20:30:12,162: INFO/ForkPoolWorker-3] Task create_task[M6IXGN3RP01Q] succeeded in 10.006097199999203s: 'worked for 10 secs task id '
+[2021-11-12 20:30:12,175: INFO/MainProcess] Received task: create_task[6UFLD8Q5D7NW]  
+[2021-11-12 20:30:12,242: INFO/ForkPoolWorker-2] Task create_task[39TW4RV4X2SQ] succeeded in 10.013047799999185s: 'worked for 10 secs task id '
+[2021-11-12 20:30:12,263: INFO/MainProcess] Received task: create_task[VB01IK7GMAZ4]  
+[2021-11-12 20:30:12,292: INFO/ForkPoolWorker-4] Task create_task[LD9MD6Z7PDZX] succeeded in 10.012428000001819s: 'worked for 10 secs task id '
+[2021-11-12 20:30:12,303: INFO/MainProcess] Received task: create_task[QL371LF1FM0S]  
+[2021-11-12 20:30:22,118: INFO/ForkPoolWorker-1] Task create_task[WJ6EEUF06F46] succeeded in 10.023022299999866s: 'worked for 10 secs task id '
+[2021-11-12 20:30:22,141: INFO/MainProcess] Received task: create_task[UYQESHOWUSKM]  
+[2021-11-12 20:30:22,184: INFO/ForkPoolWorker-3] Task create_task[2M7YP9ZXFWLJ] succeeded in 10.016377899999497s: 'worked for 10 secs task id '
+[2021-11-12 20:30:22,207: INFO/MainProcess] Received task: create_task[NS99L152NV2O]  
+[2021-11-12 20:30:22,263: INFO/ForkPoolWorker-2] Task create_task[6UFLD8Q5D7NW] succeeded in 10.012354499998764s: 'worked for 10 secs task id '
+[2021-11-12 20:30:22,278: INFO/MainProcess] Received task: create_task[0MEW73DC9ZMU]  
+[2021-11-12 20:30:22,311: INFO/ForkPoolWorker-4] Task create_task[VB01IK7GMAZ4] succeeded in 10.013857400001143s: 'worked for 10 secs task id '
+[2021-11-12 20:30:22,317: INFO/MainProcess] Received task: create_task[1M5G57J96GUL]  
+[2021-11-12 20:30:32,143: INFO/ForkPoolWorker-1] Task create_task[QL371LF1FM0S] succeeded in 10.015056700001878s: 'worked for 10 secs task id '
+[2021-11-12 20:30:32,166: INFO/MainProcess] Received task: create_task[N7J9LJJML7DP]  
+[2021-11-12 20:30:32,214: INFO/ForkPoolWorker-3] Task create_task[UYQESHOWUSKM] succeeded in 10.019329200000357s: 'worked for 10 secs task id '
+[2021-11-12 20:30:32,238: INFO/MainProcess] Received task: create_task[KFJP9GAGNFGL]  
+[2021-11-12 20:30:32,287: INFO/ForkPoolWorker-2] Task create_task[NS99L152NV2O] succeeded in 10.015905199998087s: 'worked for 10 secs task id '
+[2021-11-12 20:30:32,302: INFO/MainProcess] Received task: create_task[Z8GVDJ7HCN71]  
+[2021-11-12 20:30:32,322: INFO/ForkPoolWorker-4] Task create_task[0MEW73DC9ZMU] succeeded in 10.007675200002268s: 'worked for 10 secs task id '
+[2021-11-12 20:30:32,331: INFO/MainProcess] Received task: create_task[Y4Z3A97Z336J]  
+[2021-11-12 20:30:42,177: INFO/ForkPoolWorker-1] Task create_task[1M5G57J96GUL] succeeded in 10.022087999997893s: 'worked for 10 secs task id '
+[2021-11-12 20:30:42,197: INFO/MainProcess] Received task: create_task[LIRMEDK8RVJ1]  
+[2021-11-12 20:30:42,243: INFO/ForkPoolWorker-3] Task create_task[N7J9LJJML7DP] succeeded in 10.018323600001168s: 'worked for 10 secs task id '
+[2021-11-12 20:30:42,250: INFO/MainProcess] Received task: create_task[PLBDB1A93RIL]  
+[2021-11-12 20:30:42,302: INFO/ForkPoolWorker-2] Task create_task[KFJP9GAGNFGL] succeeded in 10.007831899998564s: 'worked for 10 secs task id '
+[2021-11-12 20:30:42,309: INFO/MainProcess] Received task: create_task[77XY17RS4Y9U]  
+[2021-11-12 20:30:42,332: INFO/ForkPoolWorker-4] Task create_task[Z8GVDJ7HCN71] succeeded in 10.005854200000613s: 'worked for 10 secs task id '
+[2021-11-12 20:30:42,339: INFO/MainProcess] Received task: create_task[RO9P1ZLJ1OLQ]  
+[2021-11-12 20:30:52,207: INFO/ForkPoolWorker-1] Task create_task[Y4Z3A97Z336J] succeeded in 10.019801699996606s: 'worked for 10 secs task id '
+[2021-11-12 20:30:52,232: INFO/MainProcess] Received task: create_task[5NG84UMX083L]  
+[2021-11-12 20:30:52,253: INFO/ForkPoolWorker-3] Task create_task[LIRMEDK8RVJ1] succeeded in 10.006524100001116s: 'worked for 10 secs task id '
+[2021-11-12 20:30:52,266: INFO/MainProcess] Received task: create_task[9CD7YWJJJJWY]  
+[2021-11-12 20:30:52,311: INFO/ForkPoolWorker-2] Task create_task[PLBDB1A93RIL] succeeded in 10.006038899999112s: 'worked for 10 secs task id '
+[2021-11-12 20:30:52,318: INFO/MainProcess] Received task: create_task[AMHK6TFBE37L]  
+[2021-11-12 20:30:52,342: INFO/ForkPoolWorker-4] Task create_task[77XY17RS4Y9U] succeeded in 10.006168300002173s: 'worked for 10 secs task id '
+[2021-11-12 20:30:52,348: INFO/MainProcess] Received task: create_task[TXC5S40AZQL7]  
+[2021-11-12 20:31:02,238: INFO/ForkPoolWorker-1] Task create_task[RO9P1ZLJ1OLQ] succeeded in 10.019989899999928s: 'worked for 10 secs task id '
+[2021-11-12 20:31:02,244: INFO/MainProcess] Received task: create_task[32TBENCJNVJS]  
+[2021-11-12 20:31:02,275: INFO/ForkPoolWorker-3] Task create_task[5NG84UMX083L] succeeded in 10.016054700001405s: 'worked for 10 secs task id '
+[2021-11-12 20:31:02,282: INFO/MainProcess] Received task: create_task[ZCB9YCYPLUYV]  
+[2021-11-12 20:31:02,322: INFO/ForkPoolWorker-2] Task create_task[9CD7YWJJJJWY] succeeded in 10.007165600000008s: 'worked for 10 secs task id '
+[2021-11-12 20:31:02,336: INFO/MainProcess] Received task: create_task[IZNEG1X0L0CJ]  
+[2021-11-12 20:31:02,351: INFO/ForkPoolWorker-4] Task create_task[AMHK6TFBE37L] succeeded in 10.006528099998832s: 'worked for 10 secs task id '
+[2021-11-12 20:31:02,358: INFO/MainProcess] Received task: create_task[TMVRDD99OR57]  
+[2021-11-12 20:31:12,252: INFO/ForkPoolWorker-1] Task create_task[TXC5S40AZQL7] succeeded in 10.010923900001217s: 'worked for 10 secs task id '
+[2021-11-12 20:31:12,261: INFO/MainProcess] Received task: create_task[J0JP9MMDOV8I]  
+[2021-11-12 20:31:12,292: INFO/ForkPoolWorker-3] Task create_task[32TBENCJNVJS] succeeded in 10.013181499998609s: 'worked for 10 secs task id '
+[2021-11-12 20:31:12,299: INFO/MainProcess] Received task: create_task[SEWABTC1GTMX]  
+[2021-11-12 20:31:12,341: INFO/ForkPoolWorker-2] Task create_task[ZCB9YCYPLUYV] succeeded in 10.013012999999773s: 'worked for 10 secs task id '
+[2021-11-12 20:31:12,350: INFO/MainProcess] Received task: create_task[612W27PKRSXV]  
+[2021-11-12 20:31:12,362: INFO/ForkPoolWorker-4] Task create_task[IZNEG1X0L0CJ] succeeded in 10.00727420000112s: 'worked for 10 secs task id '
+[2021-11-12 20:31:12,371: INFO/MainProcess] Received task: create_task[P7VV9EKY2PG4]  
+[2021-11-12 20:31:22,270: INFO/ForkPoolWorker-1] Task create_task[TMVRDD99OR57] succeeded in 10.013877900000807s: 'worked for 10 secs task id '
+[2021-11-12 20:31:22,276: INFO/MainProcess] Received task: create_task[LIJOQH3ANKL7]  
+[2021-11-12 20:31:22,302: INFO/ForkPoolWorker-3] Task create_task[J0JP9MMDOV8I] succeeded in 10.00635229999898s: 'worked for 10 secs task id '
+[2021-11-12 20:31:22,309: INFO/MainProcess] Received task: create_task[JU13PE6NL7W1]  
+[2021-11-12 20:31:22,352: INFO/ForkPoolWorker-2] Task create_task[SEWABTC1GTMX] succeeded in 10.005886499999178s: 'worked for 10 secs task id '
+[2021-11-12 20:31:22,358: INFO/MainProcess] Received task: create_task[I3GXN2VYCCLC]  
+[2021-11-12 20:31:22,371: INFO/ForkPoolWorker-4] Task create_task[612W27PKRSXV] succeeded in 10.00483180000083s: 'worked for 10 secs task id '
+[2021-11-12 20:31:22,378: INFO/MainProcess] Received task: create_task[4SAJKRFMQC7W]  
+[2021-11-12 20:31:32,287: INFO/ForkPoolWorker-1] Task create_task[P7VV9EKY2PG4] succeeded in 10.013614700001199s: 'worked for 10 secs task id '
+[2021-11-12 20:31:32,294: INFO/MainProcess] Received task: create_task[1V51LA9N5GLG]  
+[2021-11-12 20:31:32,311: INFO/ForkPoolWorker-3] Task create_task[LIJOQH3ANKL7] succeeded in 10.006223599997611s: 'worked for 10 secs task id '
+[2021-11-12 20:31:32,318: INFO/MainProcess] Received task: create_task[GFUTQL3W2GO7]  
+[2021-11-12 20:31:32,361: INFO/ForkPoolWorker-2] Task create_task[JU13PE6NL7W1] succeeded in 10.006399599998986s: 'worked for 10 secs task id '
+[2021-11-12 20:31:32,368: INFO/MainProcess] Received task: create_task[ZL9TFHYA2LWJ]  
+[2021-11-12 20:31:32,381: INFO/ForkPoolWorker-4] Task create_task[I3GXN2VYCCLC] succeeded in 10.006608100000449s: 'worked for 10 secs task id '
+[2021-11-12 20:31:32,389: INFO/MainProcess] Received task: create_task[JH6SO481EFZC]  
+[2021-11-12 20:31:42,305: INFO/ForkPoolWorker-1] Task create_task[4SAJKRFMQC7W] succeeded in 10.014858200000162s: 'worked for 10 secs task id '
+[2021-11-12 20:31:42,321: INFO/MainProcess] Received task: create_task[56QNX7UYOYPN]  
+[2021-11-12 20:31:42,324: INFO/ForkPoolWorker-3] Task create_task[1V51LA9N5GLG] succeeded in 10.009440300000279s: 'worked for 10 secs task id '
+[2021-11-12 20:31:42,342: INFO/MainProcess] Received task: create_task[9FV1IWSTMBHG]  
+[2021-11-12 20:31:42,371: INFO/ForkPoolWorker-2] Task create_task[GFUTQL3W2GO7] succeeded in 10.006489700001111s: 'worked for 10 secs task id '
+[2021-11-12 20:31:42,377: INFO/MainProcess] Received task: create_task[3DVRS1YU2G0I]  
+[2021-11-12 20:31:42,391: INFO/ForkPoolWorker-4] Task create_task[ZL9TFHYA2LWJ] succeeded in 10.006679399997665s: 'worked for 10 secs task id '
+[2021-11-12 20:31:42,398: INFO/MainProcess] Received task: create_task[O69VEFVZVCEG]  
+[2021-11-12 20:31:52,328: INFO/ForkPoolWorker-1] Task create_task[JH6SO481EFZC] succeeded in 10.015777399999934s: 'worked for 10 secs task id '
+[2021-11-12 20:31:52,335: INFO/MainProcess] Received task: create_task[UXXJIHN1RPHT]  
+[2021-11-12 20:31:52,341: INFO/ForkPoolWorker-3] Task create_task[56QNX7UYOYPN] succeeded in 10.00974949999727s: 'worked for 10 secs task id '
+[2021-11-12 20:31:52,348: INFO/MainProcess] Received task: create_task[KCUC5STTJXM5]  
+[2021-11-12 20:31:52,382: INFO/ForkPoolWorker-2] Task create_task[9FV1IWSTMBHG] succeeded in 10.007892999998148s: 'worked for 10 secs task id '
+[2021-11-12 20:31:52,391: INFO/MainProcess] Received task: create_task[2Y0OZ2OKPZDD]  
+[2021-11-12 20:31:52,402: INFO/ForkPoolWorker-4] Task create_task[3DVRS1YU2G0I] succeeded in 10.007317200001125s: 'worked for 10 secs task id '
+[2021-11-12 20:31:52,411: INFO/MainProcess] Received task: create_task[4HPU5FIH50AN]  
+[2021-11-12 20:32:02,342: INFO/ForkPoolWorker-1] Task create_task[O69VEFVZVCEG] succeeded in 10.009927200000675s: 'worked for 10 secs task id '
+[2021-11-12 20:32:02,352: INFO/ForkPoolWorker-3] Task create_task[UXXJIHN1RPHT] succeeded in 10.007008100001258s: 'worked for 10 secs task id '
+[2021-11-12 20:32:02,357: INFO/MainProcess] Received task: create_task[4FOPN6WC8FG1]  
+[2021-11-12 20:32:02,370: INFO/MainProcess] Received task: create_task[IRQZFPLX8HXA]  
+[2021-11-12 20:32:02,393: INFO/ForkPoolWorker-2] Task create_task[KCUC5STTJXM5] succeeded in 10.006520200000523s: 'worked for 10 secs task id '
+[2021-11-12 20:32:02,412: INFO/ForkPoolWorker-4] Task create_task[2Y0OZ2OKPZDD] succeeded in 10.005339399998775s: 'worked for 10 secs task id '
+[2021-11-12 20:32:02,432: INFO/MainProcess] Received task: create_task[6FG4NERA9MA9]  
+[2021-11-12 20:32:02,479: INFO/MainProcess] Received task: create_task[RNIMDUMOOI6C]  
+[2021-11-12 20:32:12,360: INFO/ForkPoolWorker-1] Task create_task[4HPU5FIH50AN] succeeded in 10.01390370000081s: 'worked for 10 secs task id '
+[2021-11-12 20:32:12,371: INFO/MainProcess] Received task: create_task[WN4VBE2M83Q1]  
+[2021-11-12 20:32:12,372: INFO/ForkPoolWorker-3] Task create_task[4FOPN6WC8FG1] succeeded in 10.007425499999954s: 'worked for 10 secs task id '
+[2021-11-12 20:32:12,381: INFO/MainProcess] Received task: create_task[T9SM4UV3KRE4]  
+[2021-11-12 20:32:12,432: INFO/ForkPoolWorker-2] Task create_task[IRQZFPLX8HXA] succeeded in 10.00524150000274s: 'worked for 10 secs task id '
+[2021-11-12 20:32:12,441: INFO/MainProcess] Received task: create_task[R1QF8390RDG9]  
+[2021-11-12 20:32:12,481: INFO/ForkPoolWorker-4] Task create_task[6FG4NERA9MA9] succeeded in 10.006712000002153s: 'worked for 10 secs task id '
+[2021-11-12 20:32:12,488: INFO/MainProcess] Received task: create_task[XT6S8VMZ7UVY]  
+[2021-11-12 20:32:22,372: INFO/ForkPoolWorker-1] Task create_task[RNIMDUMOOI6C] succeeded in 10.00596890000088s: 'worked for 10 secs task id '
+[2021-11-12 20:32:22,381: INFO/MainProcess] Received task: create_task[FV508QI7QC2G]  
+[2021-11-12 20:32:22,390: INFO/ForkPoolWorker-3] Task create_task[WN4VBE2M83Q1] succeeded in 10.01260480000201s: 'worked for 10 secs task id '
+[2021-11-12 20:32:22,409: INFO/MainProcess] Received task: create_task[BVWIKBGSDS6V]  
+[2021-11-12 20:32:22,442: INFO/ForkPoolWorker-2] Task create_task[T9SM4UV3KRE4] succeeded in 10.006178999999975s: 'worked for 10 secs task id '
+[2021-11-12 20:32:22,462: INFO/MainProcess] Received task: create_task[SEBYMGFE1THS]  
+[2021-11-12 20:32:22,492: INFO/ForkPoolWorker-4] Task create_task[R1QF8390RDG9] succeeded in 10.007130900001357s: 'worked for 10 secs task id '
+[2021-11-12 20:32:22,501: INFO/MainProcess] Received task: create_task[FB77B7BMYVMR]  
+[2021-11-12 20:32:32,393: INFO/ForkPoolWorker-1] Task create_task[XT6S8VMZ7UVY] succeeded in 10.017533899997943s: 'worked for 10 secs task id '
+[2021-11-12 20:32:32,412: INFO/ForkPoolWorker-3] Task create_task[FV508QI7QC2G] succeeded in 10.015062399997987s: 'worked for 10 secs task id '
+[2021-11-12 20:32:32,413: INFO/MainProcess] Received task: create_task[54A0ZMNHKTHE]  
+[2021-11-12 20:32:32,434: INFO/MainProcess] Received task: create_task[X7RKX49V88MK]  
+[2021-11-12 20:32:32,462: INFO/ForkPoolWorker-2] Task create_task[BVWIKBGSDS6V] succeeded in 10.008013099999516s: 'worked for 10 secs task id '
+[2021-11-12 20:32:32,469: INFO/MainProcess] Received task: create_task[QYKT11FQCX9K]  
+[2021-11-12 20:32:32,507: INFO/ForkPoolWorker-4] Task create_task[SEBYMGFE1THS] succeeded in 10.01071149999916s: 'worked for 10 secs task id '
+[2021-11-12 20:32:32,518: INFO/MainProcess] Received task: create_task[38JJDS49UHU3]  
+[2021-11-12 20:32:42,416: INFO/ForkPoolWorker-1] Task create_task[FB77B7BMYVMR] succeeded in 10.010549500002526s: 'worked for 10 secs task id '
+[2021-11-12 20:32:42,425: INFO/MainProcess] Received task: create_task[7J5XF5PTQQCH]  
+[2021-11-12 20:32:42,442: INFO/ForkPoolWorker-3] Task create_task[54A0ZMNHKTHE] succeeded in 10.014480800000456s: 'worked for 10 secs task id '
+[2021-11-12 20:32:42,452: INFO/MainProcess] Received task: create_task[AOQB8AK9PEVA]  
+[2021-11-12 20:32:42,472: INFO/ForkPoolWorker-2] Task create_task[X7RKX49V88MK] succeeded in 10.0067166000008s: 'worked for 10 secs task id '
+[2021-11-12 20:32:42,503: INFO/MainProcess] Received task: create_task[903SP12K0E5S]  
+[2021-11-12 20:32:42,523: INFO/ForkPoolWorker-4] Task create_task[QYKT11FQCX9K] succeeded in 10.009472600002482s: 'worked for 10 secs task id '
+[2021-11-12 20:32:42,533: INFO/MainProcess] Received task: create_task[QMVYJW45TETP]  
+[2021-11-12 20:32:52,435: INFO/ForkPoolWorker-1] Task create_task[38JJDS49UHU3] succeeded in 10.014392099998076s: 'worked for 10 secs task id '
+[2021-11-12 20:32:52,461: INFO/ForkPoolWorker-3] Task create_task[7J5XF5PTQQCH] succeeded in 10.014509499997075s: 'worked for 10 secs task id '
+[2021-11-12 20:32:52,513: INFO/ForkPoolWorker-2] Task create_task[AOQB8AK9PEVA] succeeded in 10.014941299999919s: 'worked for 10 secs task id '
+[2021-11-12 20:32:52,538: INFO/ForkPoolWorker-4] Task create_task[903SP12K0E5S] succeeded in 10.009931999997207s: 'worked for 10 secs task id '
+[2021-11-12 20:32:53,747: WARNING/MainProcess] Restoring 1 unacknowledged message(s)
+[2021-11-12 20:33:52,362: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 20:33:52,383: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 20:33:53,421: INFO/MainProcess] mingle: all alone
+[2021-11-12 20:33:53,439: INFO/MainProcess] celery@c4f516cefc81 ready.
+[2021-11-12 20:33:58,068: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 20:36:20,896: INFO/MainProcess] Received task: create_task[BGXIK1A5CUQY]  
+[2021-11-12 20:36:30,915: INFO/ForkPoolWorker-1] Task create_task[BGXIK1A5CUQY] succeeded in 10.01190889999998s: 'worked for 10 secs task id '
+[2021-11-12 20:37:09,960: INFO/MainProcess] Received task: create_task[D864Q3CF5M0M]  
+[2021-11-12 20:37:19,972: INFO/ForkPoolWorker-1] Task create_task[D864Q3CF5M0M] succeeded in 10.004806500000996s: 'worked for 10 secs task id '
+[2021-11-12 20:38:35,912: INFO/MainProcess] Received task: create_task[2.X31CYWU01XSJ]  
+[2021-11-12 20:38:45,929: INFO/ForkPoolWorker-1] Task create_task[2.X31CYWU01XSJ] succeeded in 10.011709800000972s: 'worked for 10 secs task id '
+[2021-11-12 20:56:37,916: INFO/MainProcess] Received task: create_task[2.2BF6ZPHDTIF8]  
+[2021-11-12 20:56:47,944: INFO/ForkPoolWorker-1] Task create_task[2.2BF6ZPHDTIF8] succeeded in 10.014558299997589s: 'worked for 10 secs task id '
+[2021-11-12 20:57:06,076: INFO/MainProcess] Received task: create_task[2.95ZINKMO3F0P]  
+[2021-11-12 20:57:16,095: INFO/ForkPoolWorker-1] Task create_task[2.95ZINKMO3F0P] succeeded in 10.01456859999962s: 'worked for 10 secs task id '
+[2021-11-12 21:16:11,195: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 21:16:11,214: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 21:16:12,248: INFO/MainProcess] mingle: all alone
+[2021-11-12 21:16:12,311: INFO/MainProcess] celery@448134193fce ready.
+[2021-11-12 21:16:17,120: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 21:43:09,709: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/usr/local/lib/python3.9/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py", line 599, in start
+    c.loop(*c.loop_args())
+  File "/usr/local/lib/python3.9/site-packages/celery/worker/loops.py", line 83, in asynloop
+    next(loop)
+  File "/usr/local/lib/python3.9/site-packages/kombu/asynchronous/hub.py", line 364, in create_loop
+    cb(*cbargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/redis.py", line 1083, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/redis.py", line 354, in on_readable
+    chan.handlers[type]()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/redis.py", line 688, in _receive
+    ret.append(self._receive_one(c))
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/redis.py", line 698, in _receive_one
+    response = c.parse_response()
+  File "/usr/local/lib/python3.9/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.9/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.9/site-packages/redis/connection.py", line 324, in read_response
+    raw = self._buffer.readline()
+  File "/usr/local/lib/python3.9/site-packages/redis/connection.py", line 256, in readline
+    self._read_from_socket()
+  File "/usr/local/lib/python3.9/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+[2021-11-12 21:43:09,766: ERROR/MainProcess] consumer: Cannot connect to redis://redis:6379/0: Error 111 connecting to redis:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+[2021-11-12 21:43:11,776: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 21:43:11,795: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 21:43:12,808: INFO/MainProcess] mingle: all alone
+[2021-11-12 21:51:51,108: INFO/MainProcess] Received task: create_task[2.JSZGS0IYDJH0]  
+[2021-11-12 21:51:52,359: INFO/MainProcess] Received task: create_task[2.ZQCWYUNUQQ2T]  
+[2021-11-12 21:52:01,140: INFO/ForkPoolWorker-1] Task create_task[2.JSZGS0IYDJH0] succeeded in 10.01960390000022s: 'worked for 10 secs task id '
+[2021-11-12 21:52:02,386: INFO/ForkPoolWorker-3] Task create_task[2.ZQCWYUNUQQ2T] succeeded in 10.01864249999926s: 'worked for 10 secs task id '
+[2021-11-12 22:07:11,056: INFO/MainProcess] Received task: create_task[7f113f3e-3714-45fb-bfb6-8f783de1db7a]  
+[2021-11-12 22:07:11,073: ERROR/ForkPoolWorker-1] Task create_task[7f113f3e-3714-45fb-bfb6-8f783de1db7a] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'user'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'user'
+[2021-11-12 22:09:12,796: INFO/MainProcess] Received task: create_task[2.RR96H0XS7QY1]  
+[2021-11-12 22:09:12,805: ERROR/ForkPoolWorker-1] Task create_task[2.RR96H0XS7QY1] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'user'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'user'
+[2021-11-12 22:13:58,212: INFO/MainProcess] Received task: create_task[2.3BILPJZB1QXH]  
+[2021-11-12 22:13:58,237: ERROR/ForkPoolWorker-1] Task create_task[2.3BILPJZB1QXH] raised unexpected: TypeError("create_task() missing 1 required positional argument: 'user'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+TypeError: create_task() missing 1 required positional argument: 'user'
+[2021-11-12 22:17:32,662: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 22:17:32,679: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 22:17:33,714: INFO/MainProcess] mingle: all alone
+[2021-11-12 22:17:33,739: INFO/MainProcess] celery@aa4658202a92 ready.
+[2021-11-12 22:17:38,384: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 22:18:06,215: INFO/MainProcess] Received task: create_task[2.VF6TUF7EVE96]  
+[2021-11-12 22:18:14,755: INFO/MainProcess] Received task: create_task[2.KIEVBN0FTW2A]  
+[2021-11-12 22:18:16,228: INFO/ForkPoolWorker-1] Task create_task[2.VF6TUF7EVE96] succeeded in 10.007827699999325s: 'worked for 10 secs task id '
+[2021-11-12 22:18:23,281: INFO/MainProcess] Received task: create_task[1.NWYHZ9JVHH5J]  
+[2021-11-12 22:18:24,653: INFO/MainProcess] Received task: create_task[1.HRSGZGOLPJU7]  
+[2021-11-12 22:18:24,786: INFO/ForkPoolWorker-3] Task create_task[2.KIEVBN0FTW2A] succeeded in 10.025750200002221s: 'worked for 10 secs task id '
+[2021-11-12 22:18:33,304: INFO/ForkPoolWorker-1] Task create_task[1.NWYHZ9JVHH5J] succeeded in 10.012504399997852s: 'worked for 10 secs task id '
+[2021-11-12 22:18:34,685: INFO/ForkPoolWorker-2] Task create_task[1.HRSGZGOLPJU7] succeeded in 10.024185399997805s: 'worked for 10 secs task id '
+[2021-11-12 22:31:21,011: INFO/MainProcess] Received task: create_task[1.JZW4XZ0HUD1U]  
+[2021-11-12 22:31:31,112: INFO/ForkPoolWorker-1] Task create_task[1.JZW4XZ0HUD1U] succeeded in 10.0861928000013s: 'worked for 10 secs task id '
+[2021-11-12 22:31:40,130: INFO/MainProcess] Received task: create_task[1.T7U0WVTANTX2]  
+[2021-11-12 22:32:10,167: INFO/ForkPoolWorker-1] Task create_task[1.T7U0WVTANTX2] succeeded in 30.032721800002037s: 'worked for 30 secs task id '
+[2021-11-12 22:33:23,077: INFO/MainProcess] Received task: create_task[1.AGK2480J61IH]  
+[2021-11-12 22:33:53,116: INFO/ForkPoolWorker-1] Task create_task[1.AGK2480J61IH] succeeded in 30.033916399999725s: 'worked for 30 secs task id '
+[2021-11-12 22:34:00,304: INFO/MainProcess] Received task: create_task[1.1UV16DN3ZZIC]  
+[2021-11-12 22:34:30,452: INFO/ForkPoolWorker-1] Task create_task[1.1UV16DN3ZZIC] succeeded in 30.024894199999835s: 'worked for 30 secs task id '
+[2021-11-12 22:36:36,508: INFO/MainProcess] Received task: create_task[1.VEW6KUKDSWS2]  
+[2021-11-12 22:37:06,532: INFO/ForkPoolWorker-1] Task create_task[1.VEW6KUKDSWS2] succeeded in 30.015435600002093s: 'worked for 30 secs task id '
+[2021-11-12 22:38:01,775: INFO/MainProcess] Received task: create_task[1.KPLE3OHYDP01]  
+[2021-11-12 22:38:31,882: INFO/ForkPoolWorker-1] Task create_task[1.KPLE3OHYDP01] succeeded in 30.015622599999915s: 'worked for 30 secs task id '
+[2021-11-12 22:40:03,585: INFO/MainProcess] Received task: create_task[1.HQ4Q49S1K9FO]  
+[2021-11-12 22:40:33,611: INFO/ForkPoolWorker-1] Task create_task[1.HQ4Q49S1K9FO] succeeded in 30.020115199997235s: 'worked for 30 secs task id '
+[2021-11-12 22:42:36,485: INFO/MainProcess] Received task: create_task[1.9X8F76DUK84N]  
+[2021-11-12 22:42:39,150: INFO/MainProcess] Received task: create_task[1.PGLR5KXO2IEA]  
+[2021-11-12 22:42:51,584: INFO/MainProcess] Received task: create_task[1.FPBOIDNR2V38]  
+[2021-11-12 22:43:06,522: INFO/ForkPoolWorker-1] Task create_task[1.9X8F76DUK84N] succeeded in 30.03015199999936s: 'worked for 30 secs task id '
+[2021-11-12 22:43:09,176: INFO/ForkPoolWorker-3] Task create_task[1.PGLR5KXO2IEA] succeeded in 30.008688100002473s: 'worked for 30 secs task id '
+[2021-11-12 22:43:21,643: INFO/ForkPoolWorker-2] Task create_task[1.FPBOIDNR2V38] succeeded in 30.044036999999662s: 'worked for 30 secs task id '
+[2021-11-12 22:44:56,240: INFO/MainProcess] Received task: create_task[1.W6M6CMSGCC72]  
+[2021-11-12 22:45:26,281: INFO/ForkPoolWorker-1] Task create_task[1.W6M6CMSGCC72] succeeded in 30.032765100000688s: 'worked for 30 secs task id '
+[2021-11-12 22:45:45,697: INFO/MainProcess] Received task: create_task[1.3EUV10QPOYSV]  
+[2021-11-12 22:46:15,736: INFO/ForkPoolWorker-1] Task create_task[1.3EUV10QPOYSV] succeeded in 30.0322092000024s: 'worked for 30 secs task id '
+[2021-11-12 22:46:16,028: INFO/MainProcess] Received task: create_task[1.M7ECXPZ60FLZ]  
+[2021-11-12 22:46:20,122: INFO/MainProcess] Received task: create_task[1.MU8HOSFAP9N1]  
+[2021-11-12 22:46:46,062: INFO/ForkPoolWorker-1] Task create_task[1.M7ECXPZ60FLZ] succeeded in 30.029189099997893s: 'worked for 30 secs task id '
+[2021-11-12 22:46:50,151: INFO/ForkPoolWorker-3] Task create_task[1.MU8HOSFAP9N1] succeeded in 30.024200899999414s: 'worked for 30 secs task id '
+[2021-11-12 23:01:28,581: INFO/MainProcess] Received task: create_task[1.JRFUTMNINV2Q]  
+[2021-11-12 23:01:58,649: INFO/ForkPoolWorker-1] Task create_task[1.JRFUTMNINV2Q] succeeded in 30.035859899999195s: 'worked for 30 secs task id '
+[2021-11-12 23:03:40,460: INFO/MainProcess] Received task: create_task[1.XXLN3Z3TJLXI]  
+[2021-11-12 23:03:41,351: INFO/MainProcess] Received task: create_task[1.T498G7ZGDLLM]  
+[2021-11-12 23:03:41,894: INFO/MainProcess] Received task: create_task[1.B9SKDK0OS3YQ]  
+[2021-11-12 23:03:42,789: INFO/MainProcess] Received task: create_task[1.4LJ0NKNZGZZP]  
+[2021-11-12 23:03:50,954: INFO/MainProcess] Received task: create_task[2.T65Y2ZPB7Y62]  
+[2021-11-12 23:03:51,615: INFO/MainProcess] Received task: create_task[2.1FBFFZZQAKWS]  
+[2021-11-12 23:03:52,093: INFO/MainProcess] Received task: create_task[2.DC8TQP64LCY5]  
+[2021-11-12 23:03:52,632: INFO/MainProcess] Received task: create_task[2.M7E2ZMDIGGTH]  
+[2021-11-12 23:03:53,219: INFO/MainProcess] Received task: create_task[2.LE5VVT0PT2T2]  
+[2021-11-12 23:03:53,705: INFO/MainProcess] Received task: create_task[2.B6SX0H842Y5M]  
+[2021-11-12 23:04:10,503: INFO/ForkPoolWorker-1] Task create_task[1.XXLN3Z3TJLXI] succeeded in 30.031805700000405s: 'worked for 30 secs task id '
+[2021-11-12 23:04:11,395: INFO/ForkPoolWorker-3] Task create_task[1.T498G7ZGDLLM] succeeded in 30.02714869999909s: 'worked for 30 secs task id '
+[2021-11-12 23:04:11,939: INFO/ForkPoolWorker-2] Task create_task[1.B9SKDK0OS3YQ] succeeded in 30.033815199996752s: 'worked for 30 secs task id '
+[2021-11-12 23:04:12,863: INFO/ForkPoolWorker-4] Task create_task[1.4LJ0NKNZGZZP] succeeded in 30.048906699998042s: 'worked for 30 secs task id '
+[2021-11-12 23:04:40,534: INFO/ForkPoolWorker-1] Task create_task[2.T65Y2ZPB7Y62] succeeded in 30.02803579999818s: 'worked for 30 secs task id '
+[2021-11-12 23:04:41,437: INFO/ForkPoolWorker-3] Task create_task[2.1FBFFZZQAKWS] succeeded in 30.03586070000165s: 'worked for 30 secs task id '
+[2021-11-12 23:04:41,973: INFO/ForkPoolWorker-2] Task create_task[2.DC8TQP64LCY5] succeeded in 30.028826599998865s: 'worked for 30 secs task id '
+[2021-11-12 23:04:42,892: INFO/ForkPoolWorker-4] Task create_task[2.M7E2ZMDIGGTH] succeeded in 30.021958299999824s: 'worked for 30 secs task id '
+[2021-11-12 23:05:10,554: INFO/ForkPoolWorker-1] Task create_task[2.LE5VVT0PT2T2] succeeded in 30.009306600000855s: 'worked for 30 secs task id '
+[2021-11-12 23:05:11,485: INFO/ForkPoolWorker-3] Task create_task[2.B6SX0H842Y5M] succeeded in 30.034702400000242s: 'worked for 30 secs task id '
+[2021-11-12 23:11:59,201: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-12 23:11:59,252: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-12 23:12:00,376: INFO/MainProcess] mingle: all alone
+[2021-11-12 23:12:00,452: INFO/MainProcess] celery@464a10b06803 ready.
+[2021-11-12 23:12:04,635: INFO/MainProcess] Received task: create_task[2.TJGDTY2V0O9V]  
+[2021-11-12 23:12:05,706: INFO/MainProcess] Received task: create_task[2.P69NSUY3P2PD]  
+[2021-11-12 23:12:06,279: INFO/MainProcess] Received task: create_task[2.WKL22ZVS7YE5]  
+[2021-11-12 23:12:07,693: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-12 23:12:34,685: INFO/ForkPoolWorker-1] Task create_task[2.TJGDTY2V0O9V] succeeded in 30.034456699999282s: 'worked for 30 secs task id '
+[2021-11-12 23:12:35,744: INFO/ForkPoolWorker-2] Task create_task[2.P69NSUY3P2PD] succeeded in 30.020379699999467s: 'worked for 30 secs task id '
+[2021-11-12 23:13:04,721: INFO/ForkPoolWorker-1] Task create_task[2.WKL22ZVS7YE5] succeeded in 30.03205970000272s: 'worked for 30 secs task id '
+[2021-11-12 23:35:43,580: INFO/MainProcess] Received task: create_task[2.O1LS30C0MGGK]  
+[2021-11-12 23:35:48,126: INFO/MainProcess] Received task: create_task[1.ZCDAIV89U40Q]  
+[2021-11-12 23:35:48,712: INFO/MainProcess] Received task: create_task[1.6JWB3ES0O63N]  
+[2021-11-12 23:35:49,341: INFO/MainProcess] Received task: create_task[1.WUCN3F5V4FLN]  
+[2021-11-12 23:36:13,628: INFO/ForkPoolWorker-1] Task create_task[2.O1LS30C0MGGK] succeeded in 30.032983500001137s: 'worked for 30 secs task id '
+[2021-11-12 23:36:18,173: INFO/ForkPoolWorker-2] Task create_task[1.ZCDAIV89U40Q] succeeded in 30.026893599999312s: 'worked for 30 secs task id '
+[2021-11-12 23:36:43,663: INFO/ForkPoolWorker-1] Task create_task[1.6JWB3ES0O63N] succeeded in 30.031594099997164s: 'worked for 30 secs task id '
+[2021-11-12 23:36:48,202: INFO/ForkPoolWorker-2] Task create_task[1.WUCN3F5V4FLN] succeeded in 30.02429249999841s: 'worked for 30 secs task id '
+[2021-11-12 23:44:07,208: INFO/MainProcess] Received task: create_task[1.BS4PWW5V97UF]  
+[2021-11-12 23:44:37,282: INFO/ForkPoolWorker-1] Task create_task[1.BS4PWW5V97UF] succeeded in 30.029213199999504s: 'worked for 30 secs task id '
+[2021-11-12 23:45:13,311: INFO/MainProcess] Received task: create_task[1.L11M7RNVZCSZ]  
+[2021-11-12 23:45:14,009: INFO/MainProcess] Received task: create_task[1.VVI6F0D0MYOF]  
+[2021-11-12 23:45:22,958: INFO/MainProcess] Received task: create_task[1.70RET3L8JXJE]  
+[2021-11-12 23:45:23,425: INFO/MainProcess] Received task: create_task[1.4EB0XVKS6G4P]  
+[2021-11-12 23:45:23,933: INFO/MainProcess] Received task: create_task[1.SGE7MU6QOT1V]  
+[2021-11-12 23:45:43,348: INFO/ForkPoolWorker-1] Task create_task[1.L11M7RNVZCSZ] succeeded in 30.031719200000225s: 'worked for 30 secs task id '
+[2021-11-12 23:45:44,066: INFO/ForkPoolWorker-2] Task create_task[1.VVI6F0D0MYOF] succeeded in 30.032311999999365s: 'worked for 30 secs task id '
+[2021-11-12 23:46:13,384: INFO/ForkPoolWorker-1] Task create_task[1.70RET3L8JXJE] succeeded in 30.031796699997358s: 'worked for 30 secs task id '
+[2021-11-12 23:46:14,101: INFO/ForkPoolWorker-2] Task create_task[1.4EB0XVKS6G4P] succeeded in 30.030046600000787s: 'worked for 30 secs task id '
+[2021-11-12 23:46:26,204: INFO/MainProcess] Received task: create_task[1.AE7PUFVYR5ZL]  
+[2021-11-12 23:46:27,300: INFO/MainProcess] Received task: create_task[1.IE8TX6TRM2M9]  
+[2021-11-12 23:46:27,892: INFO/MainProcess] Received task: create_task[1.Y4QJ4OXEUS56]  
+[2021-11-12 23:46:43,412: INFO/ForkPoolWorker-1] Task create_task[1.SGE7MU6QOT1V] succeeded in 30.02401159999863s: 'worked for 30 secs task id '
+[2021-11-12 23:46:56,244: INFO/ForkPoolWorker-2] Task create_task[1.AE7PUFVYR5ZL] succeeded in 30.031719900001917s: 'worked for 30 secs task id '
+[2021-11-12 23:47:13,451: INFO/ForkPoolWorker-1] Task create_task[1.IE8TX6TRM2M9] succeeded in 30.03569079999943s: 'worked for 30 secs task id '
+[2021-11-12 23:47:19,901: INFO/MainProcess] Received task: create_task[1.GODION2KIM35]  
+[2021-11-12 23:47:20,964: INFO/MainProcess] Received task: create_task[1.DLI5220W353C]  
+[2021-11-12 23:47:26,280: INFO/ForkPoolWorker-2] Task create_task[1.Y4QJ4OXEUS56] succeeded in 30.031824800000322s: 'worked for 30 secs task id '
+[2021-11-12 23:47:49,944: INFO/ForkPoolWorker-1] Task create_task[1.GODION2KIM35] succeeded in 30.033038899997337s: 'worked for 30 secs task id '
+[2021-11-12 23:47:56,302: INFO/ForkPoolWorker-2] Task create_task[1.DLI5220W353C] succeeded in 30.019153500001266s: 'worked for 30 secs task id '
+[2021-11-12 23:49:07,506: INFO/MainProcess] Received task: create_task[1.K019CLFA74SZ]  
+[2021-11-12 23:49:08,163: INFO/MainProcess] Received task: create_task[1.4LA68V9L3M1B]  
+[2021-11-12 23:49:08,681: INFO/MainProcess] Received task: create_task[1.P4H1554SCYQH]  
+[2021-11-12 23:49:37,573: INFO/ForkPoolWorker-1] Task create_task[1.K019CLFA74SZ] succeeded in 30.031695800000307s: 'worked for 30 secs task id '
+[2021-11-12 23:49:38,201: INFO/ForkPoolWorker-2] Task create_task[1.4LA68V9L3M1B] succeeded in 30.029924300000857s: 'worked for 30 secs task id '
+[2021-11-12 23:50:07,605: INFO/ForkPoolWorker-1] Task create_task[1.P4H1554SCYQH] succeeded in 30.027528900001926s: 'worked for 30 secs task id '
+[2021-11-12 23:52:41,736: INFO/MainProcess] Received task: create_task[1.WLN6UL4ORVHQ]  
+[2021-11-12 23:52:45,506: INFO/MainProcess] Received task: create_task[2.EW2FCT6Z9P6V]  
+[2021-11-12 23:53:11,951: INFO/ForkPoolWorker-1] Task create_task[1.WLN6UL4ORVHQ] succeeded in 30.193977599999926s: 'worked for 30 secs task id '
+[2021-11-12 23:53:13,111: INFO/MainProcess] Received task: create_task[2.BKR1J2WILU32]  
+[2021-11-12 23:53:15,550: INFO/ForkPoolWorker-2] Task create_task[2.EW2FCT6Z9P6V] succeeded in 30.032094700000016s: 'worked for 30 secs task id '
+[2021-11-12 23:53:16,378: INFO/MainProcess] Received task: create_task[1.MD6LD72N6AGB]  
+[2021-11-12 23:53:17,203: INFO/MainProcess] Received task: create_task[1.5I60GUW93UY9]  
+[2021-11-12 23:53:43,162: INFO/ForkPoolWorker-1] Task create_task[2.BKR1J2WILU32] succeeded in 30.03164580000157s: 'worked for 30 secs task id '
+[2021-11-12 23:53:46,419: INFO/ForkPoolWorker-2] Task create_task[1.MD6LD72N6AGB] succeeded in 30.03452130000005s: 'worked for 30 secs task id '
+[2021-11-12 23:54:13,197: INFO/ForkPoolWorker-1] Task create_task[1.5I60GUW93UY9] succeeded in 30.031695199999376s: 'worked for 30 secs task id '
+[2021-11-13 05:30:00,147: INFO/MainProcess] Received task: create_task[1.P1kAU0qINDb1sdLruydVOa2cFnExtyESHiLu]  
+[2021-11-13 05:30:05,681: INFO/MainProcess] Received task: create_task[1.ngwDEgxP2Q7aSXuJvp2Pq9jyYqDG52asDkjT]  
+[2021-11-13 05:30:30,187: INFO/ForkPoolWorker-1] Task create_task[1.P1kAU0qINDb1sdLruydVOa2cFnExtyESHiLu] succeeded in 30.02856149999934s: 'worked for 30 secs task id '
+[2021-11-13 05:30:35,727: INFO/ForkPoolWorker-2] Task create_task[1.ngwDEgxP2Q7aSXuJvp2Pq9jyYqDG52asDkjT] succeeded in 30.032897699999012s: 'worked for 30 secs task id '
+[2021-11-13 05:37:20,536: INFO/MainProcess] Received task: create_task[1.sN6F0axfLUSrKlUBm46mi3eRwOsEOHdBvOsl]  
+[2021-11-13 05:37:21,548: INFO/MainProcess] Received task: create_task[1.dXn8NnvpRospkQYlM8mToC5XYmwoJQqUvzrJ]  
+[2021-11-13 05:37:50,566: INFO/ForkPoolWorker-1] Task create_task[1.sN6F0axfLUSrKlUBm46mi3eRwOsEOHdBvOsl] succeeded in 30.02156119999927s: 'worked for 30 secs task id '
+[2021-11-13 05:37:51,585: INFO/ForkPoolWorker-2] Task create_task[1.dXn8NnvpRospkQYlM8mToC5XYmwoJQqUvzrJ] succeeded in 30.03018809999776s: 'worked for 30 secs task id '
+[2021-11-13 22:03:59,088: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-13 22:03:59,106: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-13 22:04:00,143: INFO/MainProcess] mingle: all alone
+[2021-11-13 22:04:00,162: INFO/MainProcess] celery@4fd017a29d77 ready.
+[2021-11-13 22:04:04,532: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-13 22:05:49,463: INFO/MainProcess] Received task: create_task[8719ed1e-e0d3-4a62-a6de-f48e071d6fec]  
+[2021-11-13 22:06:19,503: INFO/ForkPoolWorker-1] Task create_task[8719ed1e-e0d3-4a62-a6de-f48e071d6fec] succeeded in 30.03474230000006s: 'worked for 30 secs task id '
+[2021-11-13 22:15:00,476: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-13 22:15:00,495: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-13 22:15:01,537: INFO/MainProcess] mingle: all alone
+[2021-11-13 22:15:01,581: INFO/MainProcess] celery@ed61b2ba2454 ready.
+[2021-11-13 22:15:07,303: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-13 22:16:08,465: INFO/MainProcess] Received task: create_task[262b7a94-4557-49f7-b33a-72c4f3c64fa8]  
+[2021-11-13 22:16:28,529: INFO/MainProcess] Received task: create_task[7879fd39-4882-4d03-9415-5d8d58382b4f]  
+[2021-11-13 22:16:38,508: INFO/ForkPoolWorker-1] Task create_task[262b7a94-4557-49f7-b33a-72c4f3c64fa8] succeeded in 30.037545100000216s: 'worked for 30 secs task id '
+[2021-11-13 22:16:58,569: INFO/ForkPoolWorker-2] Task create_task[7879fd39-4882-4d03-9415-5d8d58382b4f] succeeded in 30.034860899999785s: 'worked for 30 secs task id '
+[2021-11-13 22:17:51,112: INFO/MainProcess] Received task: create_task[830f1be2-ee0f-444c-884b-8e1611aa1d2a]  
+[2021-11-13 22:17:58,234: INFO/MainProcess] Received task: create_task[ee33925b-92cc-4121-9ff1-264117e65e21]  
+[2021-11-13 22:18:22,367: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-13 22:18:22,379: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-13 22:18:23,408: INFO/MainProcess] mingle: all alone
+[2021-11-13 22:18:23,429: INFO/MainProcess] celery@ed61b2ba2454 ready.
+[2021-11-13 22:18:26,156: INFO/MainProcess] Received task: create_task[566685e0-3dd7-45ae-af9b-8d5f5b510275]  
+[2021-11-13 22:18:27,299: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-13 22:18:56,188: INFO/ForkPoolWorker-1] Task create_task[566685e0-3dd7-45ae-af9b-8d5f5b510275] succeeded in 30.02727989999994s: 'worked for 30 secs task id '
+[2021-11-13 22:19:35,861: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-13 22:19:35,893: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-13 22:19:36,960: INFO/MainProcess] mingle: all alone
+[2021-11-13 22:19:36,981: INFO/MainProcess] celery@543ab014babc ready.
+[2021-11-13 22:19:42,510: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-13 22:20:02,841: INFO/MainProcess] Received task: create_task[30fd1993-2057-4297-acca-67a4e5dc1de5]  
+[2021-11-13 22:20:32,870: INFO/ForkPoolWorker-1] Task create_task[30fd1993-2057-4297-acca-67a4e5dc1de5] succeeded in 30.02037960000007s: 'worked for 30 secs task id '
+[2021-11-13 22:22:53,542: INFO/MainProcess] Received task: create_task[7ad913c6-4f65-4216-903d-0d042b0be15d]  
+[2021-11-13 22:23:23,564: INFO/ForkPoolWorker-1] Task create_task[7ad913c6-4f65-4216-903d-0d042b0be15d] succeeded in 30.01815140000008s: 'worked for 30 secs task id '
+[2021-11-13 22:27:18,299: INFO/MainProcess] Received task: create_task[6456f819-90a3-47e6-a5bf-6554b0a256c2]  
+[2021-11-13 22:27:48,342: INFO/ForkPoolWorker-1] Task create_task[6456f819-90a3-47e6-a5bf-6554b0a256c2] succeeded in 30.036926100000073s: 'worked for 30 secs task id '
+[2021-11-13 22:28:18,051: INFO/MainProcess] Received task: create_task[27aa0971-5a1b-4844-aa7c-8c28c1e38f27]  
+[2021-11-13 22:28:28,170: INFO/MainProcess] Received task: create_task[9e72c80c-08f0-4a08-9c51-68d33bf48ac5]  
+[2021-11-13 22:28:42,945: INFO/MainProcess] Received task: create_task[15a39c90-1315-4620-8b39-2299777d3e21]  
+[2021-11-13 22:28:44,753: INFO/MainProcess] Received task: create_task[252e8f4b-0f51-4595-ada9-c1acdda2f18f]  
+[2021-11-13 22:28:48,084: INFO/ForkPoolWorker-1] Task create_task[27aa0971-5a1b-4844-aa7c-8c28c1e38f27] succeeded in 30.029411399999844s: 'worked for 30 secs task id '
+[2021-11-13 22:28:56,101: INFO/MainProcess] Received task: create_task[492d99f1-007e-4c53-b5f6-de8f91d3da3a]  
+[2021-11-13 22:28:58,196: INFO/ForkPoolWorker-2] Task create_task[9e72c80c-08f0-4a08-9c51-68d33bf48ac5] succeeded in 30.021934999999758s: 'worked for 30 secs task id '
+[2021-11-13 22:29:18,114: INFO/ForkPoolWorker-1] Task create_task[15a39c90-1315-4620-8b39-2299777d3e21] succeeded in 30.02578459999995s: 'worked for 30 secs task id '
+[2021-11-13 22:29:28,232: INFO/ForkPoolWorker-2] Task create_task[252e8f4b-0f51-4595-ada9-c1acdda2f18f] succeeded in 30.032481599999755s: 'worked for 30 secs task id '
+[2021-11-13 22:29:48,157: INFO/ForkPoolWorker-1] Task create_task[492d99f1-007e-4c53-b5f6-de8f91d3da3a] succeeded in 30.03470249999964s: 'worked for 30 secs task id '
+[2021-11-13 22:33:54,003: INFO/MainProcess] Received task: create_task[d7681382-da11-4905-bf82-2c0fc137c554]  
+[2021-11-13 22:33:54,479: INFO/MainProcess] Received task: create_task[64b0891c-0cfd-4742-bf54-53c5d8f8263d]  
+[2021-11-13 22:33:54,956: INFO/MainProcess] Received task: create_task[45a36caf-b86a-4142-82a4-a5d45514c7a9]  
+[2021-11-13 22:34:24,021: INFO/ForkPoolWorker-1] Task create_task[d7681382-da11-4905-bf82-2c0fc137c554] succeeded in 30.013099299999794s: 'worked for 30 secs task id '
+[2021-11-13 22:34:24,515: INFO/ForkPoolWorker-2] Task create_task[64b0891c-0cfd-4742-bf54-53c5d8f8263d] succeeded in 30.03268590000016s: 'worked for 30 secs task id '
+[2021-11-13 22:34:54,053: INFO/ForkPoolWorker-1] Task create_task[45a36caf-b86a-4142-82a4-a5d45514c7a9] succeeded in 30.02315520000002s: 'worked for 30 secs task id '
+[2021-11-13 22:47:37,312: INFO/MainProcess] Received task: create_task[cb448cf9-fd9b-444e-8e66-c2d3bed59412]  
+[2021-11-13 22:47:37,895: INFO/MainProcess] Received task: create_task[a08a8a14-d6df-418a-8cf5-9c08397311f2]  
+[2021-11-13 22:47:38,635: INFO/MainProcess] Received task: create_task[63dd5921-a5e3-461d-895a-4fc47969b020]  
+[2021-11-13 22:48:07,346: INFO/ForkPoolWorker-1] Task create_task[cb448cf9-fd9b-444e-8e66-c2d3bed59412] succeeded in 30.029973300000165s: 'worked for 30 secs task id '
+[2021-11-13 22:48:07,934: INFO/ForkPoolWorker-2] Task create_task[a08a8a14-d6df-418a-8cf5-9c08397311f2] succeeded in 30.034043900000142s: 'worked for 30 secs task id '
+[2021-11-13 22:48:37,365: INFO/ForkPoolWorker-1] Task create_task[63dd5921-a5e3-461d-895a-4fc47969b020] succeeded in 30.008817700000236s: 'worked for 30 secs task id '
+[2021-11-13 22:50:32,274: INFO/MainProcess] Received task: create_task[b7469891-ee91-4400-a00a-089ba176fa4a]  
+[2021-11-13 22:50:33,034: INFO/MainProcess] Received task: create_task[ca467f6a-95b6-4979-a576-5bf1b6ac4d0e]  
+[2021-11-13 22:51:02,291: INFO/ForkPoolWorker-1] Task create_task[b7469891-ee91-4400-a00a-089ba176fa4a] succeeded in 30.01293829999986s: 'worked for 30 secs task id '
+[2021-11-13 22:51:03,058: INFO/ForkPoolWorker-2] Task create_task[ca467f6a-95b6-4979-a576-5bf1b6ac4d0e] succeeded in 30.019456099999843s: 'worked for 30 secs task id '
+[2021-11-13 22:52:48,783: INFO/MainProcess] Received task: create_task[efc15d8a-d58e-4445-bbe1-bdc7a0fd5de6]  
+[2021-11-13 22:52:49,583: INFO/MainProcess] Received task: create_task[6e0f461a-b09d-42da-93e1-89468c0cde6d]  
+[2021-11-13 22:53:18,820: INFO/ForkPoolWorker-1] Task create_task[efc15d8a-d58e-4445-bbe1-bdc7a0fd5de6] succeeded in 30.031919900000048s: 'worked for 30 secs task id '
+[2021-11-13 22:53:19,613: INFO/ForkPoolWorker-2] Task create_task[6e0f461a-b09d-42da-93e1-89468c0cde6d] succeeded in 30.026384100000087s: 'worked for 30 secs task id '
+[2021-11-13 22:54:49,628: INFO/MainProcess] Received task: create_task[30af5a48-c564-42ae-801a-f648f5d092d5]  
+[2021-11-13 22:55:19,639: INFO/ForkPoolWorker-1] Task create_task[30af5a48-c564-42ae-801a-f648f5d092d5] succeeded in 30.003104700000222s: 'worked for 30 secs task id '
+[2021-11-13 22:57:59,174: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-13 22:57:59,189: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-13 22:58:00,218: INFO/MainProcess] mingle: all alone
+[2021-11-13 22:58:00,240: INFO/MainProcess] celery@d158988ae533 ready.
+[2021-11-13 22:58:05,249: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-13 22:58:17,014: INFO/MainProcess] Received task: create_task[290e5972-187a-4708-a300-0ab2512772f7]  
+[2021-11-13 22:58:17,871: INFO/MainProcess] Received task: create_task[234525ea-da53-4791-bd70-a850b2e53efb]  
+[2021-11-13 22:58:36,547: INFO/MainProcess] Received task: create_task[52e3e46e-f99a-407e-ad98-72165aa7d34a]  
+[2021-11-13 22:58:37,739: INFO/MainProcess] Received task: create_task[0a5d6a35-c70d-46b7-9ecd-de9f0061aace]  
+[2021-11-13 22:58:47,054: INFO/ForkPoolWorker-1] Task create_task[290e5972-187a-4708-a300-0ab2512772f7] succeeded in 30.03488500000003s: 'worked for 30 secs task id '
+[2021-11-13 22:58:47,935: INFO/ForkPoolWorker-2] Task create_task[234525ea-da53-4791-bd70-a850b2e53efb] succeeded in 30.043338000000404s: 'worked for 30 secs task id '
+[2021-11-13 22:59:17,090: INFO/ForkPoolWorker-1] Task create_task[52e3e46e-f99a-407e-ad98-72165aa7d34a] succeeded in 30.031934399999955s: 'worked for 30 secs task id '
+[2021-11-13 22:59:17,973: INFO/ForkPoolWorker-2] Task create_task[0a5d6a35-c70d-46b7-9ecd-de9f0061aace] succeeded in 30.027968399999736s: 'worked for 30 secs task id '
+[2021-11-13 23:04:11,444: INFO/MainProcess] Received task: create_task[0285ef8f-7e59-49d5-9dd4-326abae276d9]  
+[2021-11-13 23:04:12,234: INFO/MainProcess] Received task: create_task[9297eeb9-a05c-4826-81bd-ea4e38e00aeb]  
+[2021-11-13 23:04:26,237: INFO/MainProcess] Received task: create_task[e0eb861c-50be-48a9-80b9-43dd517a385c]  
+[2021-11-13 23:04:26,723: INFO/MainProcess] Received task: create_task[7ebae3cc-006e-4df1-9641-28d2a9f059ea]  
+[2021-11-13 23:04:27,300: INFO/MainProcess] Received task: create_task[59aa61ff-3782-4c62-9b7d-867812d773dc]  
+[2021-11-13 23:04:41,473: INFO/ForkPoolWorker-1] Task create_task[0285ef8f-7e59-49d5-9dd4-326abae276d9] succeeded in 30.025289899999734s: 'worked for 30 secs task id '
+[2021-11-13 23:04:42,255: INFO/ForkPoolWorker-2] Task create_task[9297eeb9-a05c-4826-81bd-ea4e38e00aeb] succeeded in 30.01654419999977s: 'worked for 30 secs task id '
+[2021-11-13 23:05:11,510: INFO/ForkPoolWorker-1] Task create_task[e0eb861c-50be-48a9-80b9-43dd517a385c] succeeded in 30.033923900000445s: 'worked for 30 secs task id '
+[2021-11-13 23:05:12,269: INFO/ForkPoolWorker-2] Task create_task[7ebae3cc-006e-4df1-9641-28d2a9f059ea] succeeded in 30.006836600000497s: 'worked for 30 secs task id '
+[2021-11-13 23:05:41,553: INFO/ForkPoolWorker-1] Task create_task[59aa61ff-3782-4c62-9b7d-867812d773dc] succeeded in 30.03437320000012s: 'worked for 30 secs task id '
+[2021-11-13 23:10:16,747: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-13 23:10:16,761: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-13 23:10:17,794: INFO/MainProcess] mingle: all alone
+[2021-11-13 23:10:17,842: INFO/MainProcess] celery@3c6fdcfcd374 ready.
+[2021-11-13 23:10:22,656: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-13 23:13:25,599: INFO/MainProcess] Received task: create_task[df651a1c-7142-4878-b3bd-054e6b5f6902]  
+[2021-11-13 23:13:55,637: INFO/ForkPoolWorker-1] Task create_task[df651a1c-7142-4878-b3bd-054e6b5f6902] succeeded in 30.03504950000024s: 'worked for 30 secs task id '
+[2021-11-13 23:15:53,468: INFO/MainProcess] Received task: create_task[2a9f18c2-4fa1-4293-a4de-ca083d3460f1]  
+[2021-11-13 23:15:54,205: INFO/MainProcess] Received task: create_task[da65133b-9b0c-4b4e-9b23-69f8cde232b1]  
+[2021-11-13 23:16:23,504: INFO/ForkPoolWorker-1] Task create_task[2a9f18c2-4fa1-4293-a4de-ca083d3460f1] succeeded in 30.031840800000282s: 'worked for 30 secs task id '
+[2021-11-13 23:16:24,253: INFO/ForkPoolWorker-2] Task create_task[da65133b-9b0c-4b4e-9b23-69f8cde232b1] succeeded in 30.043328799999472s: 'worked for 30 secs task id '
+[2021-11-13 23:34:20,256: INFO/MainProcess] Received task: create_task[e7e6bc33-7827-4054-9d0c-2d4682427be5]  
+[2021-11-13 23:34:21,093: INFO/MainProcess] Received task: create_task[6fe0f3a8-cd67-42ba-b211-24aab8c73973]  
+[2021-11-13 23:34:50,312: INFO/ForkPoolWorker-1] Task create_task[e7e6bc33-7827-4054-9d0c-2d4682427be5] succeeded in 30.03959289999966s: 'worked for 30 secs task id '
+[2021-11-13 23:34:51,145: INFO/ForkPoolWorker-2] Task create_task[6fe0f3a8-cd67-42ba-b211-24aab8c73973] succeeded in 30.033166500000334s: 'worked for 30 secs task id '
+[2021-11-13 23:40:39,495: INFO/MainProcess] Received task: create_task[24551bcd-67f6-4475-9acd-34dfa2066bee]  
+[2021-11-13 23:40:48,127: INFO/MainProcess] Received task: create_task[e764a27b-6412-4a10-b2ce-dae492b25a7d]  
+[2021-11-13 23:41:09,526: INFO/ForkPoolWorker-1] Task create_task[24551bcd-67f6-4475-9acd-34dfa2066bee] succeeded in 30.02633920000062s: 'worked for 30 secs task id '
+[2021-11-13 23:41:10,605: INFO/MainProcess] Received task: create_task[3a6a326a-23f7-4f4b-9af4-8587aa414ea9]  
+[2021-11-13 23:41:18,166: INFO/ForkPoolWorker-2] Task create_task[e764a27b-6412-4a10-b2ce-dae492b25a7d] succeeded in 30.034981800000423s: 'worked for 30 secs task id '
+[2021-11-13 23:41:23,464: INFO/MainProcess] Received task: create_task[2f79a1bc-0967-475d-9279-e16f34b5f723]  
+[2021-11-13 23:41:40,631: INFO/ForkPoolWorker-1] Task create_task[3a6a326a-23f7-4f4b-9af4-8587aa414ea9] succeeded in 30.020815300000322s: 'worked for 30 secs task id '
+[2021-11-13 23:41:53,506: INFO/ForkPoolWorker-2] Task create_task[2f79a1bc-0967-475d-9279-e16f34b5f723] succeeded in 30.03521830000045s: 'worked for 30 secs task id '
+[2021-11-15 09:43:23,495: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-15 09:43:23,507: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-15 09:43:24,552: INFO/MainProcess] mingle: all alone
+[2021-11-15 09:43:24,592: INFO/MainProcess] celery@3c6fdcfcd374 ready.
+[2021-11-15 09:43:28,782: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-15 09:43:28,919: INFO/MainProcess] Received task: create_task[67267392-a1b8-4833-91c7-3c1b8e6c383f]  
+[2021-11-15 09:43:58,962: INFO/ForkPoolWorker-1] Task create_task[67267392-a1b8-4833-91c7-3c1b8e6c383f] succeeded in 30.039078800000084s: 'worked for 30 secs task id '
+[2021-11-15 10:01:17,548: INFO/MainProcess] Received task: create_task[73bd7bd0-a495-4577-af75-e25777d6b457]  
+[2021-11-15 10:01:18,411: INFO/MainProcess] Received task: create_task[8f038200-56df-4d60-b2ee-f93ca30d0664]  
+[2021-11-15 10:01:19,352: INFO/MainProcess] Received task: create_task[28442d39-7544-44fc-8682-f90b6593e72d]  
+[2021-11-15 10:01:29,564: INFO/MainProcess] Received task: create_task[daa68691-2510-4af2-9db8-aa654162a20e]  
+[2021-11-15 10:01:30,633: INFO/MainProcess] Received task: create_task[14fc74ce-1605-485d-8843-614db767cd67]  
+[2021-11-15 10:01:31,411: INFO/MainProcess] Received task: create_task[c0072b4e-017c-45e5-8686-5b847e4ceaad]  
+[2021-11-15 10:01:47,586: INFO/ForkPoolWorker-1] Task create_task[73bd7bd0-a495-4577-af75-e25777d6b457] succeeded in 30.032094099999995s: 'worked for 30 secs task id '
+[2021-11-15 10:01:48,435: INFO/ForkPoolWorker-2] Task create_task[8f038200-56df-4d60-b2ee-f93ca30d0664] succeeded in 30.017917900000157s: 'worked for 30 secs task id '
+[2021-11-15 10:02:17,617: INFO/ForkPoolWorker-1] Task create_task[28442d39-7544-44fc-8682-f90b6593e72d] succeeded in 30.026718200000005s: 'worked for 30 secs task id '
+[2021-11-15 10:02:18,471: INFO/ForkPoolWorker-2] Task create_task[daa68691-2510-4af2-9db8-aa654162a20e] succeeded in 30.031557999999904s: 'worked for 30 secs task id '
+[2021-11-15 10:02:47,648: INFO/ForkPoolWorker-1] Task create_task[14fc74ce-1605-485d-8843-614db767cd67] succeeded in 30.01849940000011s: 'worked for 30 secs task id '
+[2021-11-15 10:02:48,478: INFO/ForkPoolWorker-2] Task create_task[c0072b4e-017c-45e5-8686-5b847e4ceaad] succeeded in 30.004002899999932s: 'worked for 30 secs task id '
+[2021-11-15 10:08:00,168: INFO/MainProcess] Received task: create_task[84ba7490-6793-41d7-a0a9-66288e8e27b0]  
+[2021-11-15 10:08:30,203: INFO/ForkPoolWorker-1] Task create_task[84ba7490-6793-41d7-a0a9-66288e8e27b0] succeeded in 30.031570999999985s: 'worked for 30 secs task id '
+[2021-11-15 10:11:54,090: INFO/MainProcess] Received task: create_task[4c855949-fd66-4b65-8dab-7c404361d5ff]  
+[2021-11-15 10:12:24,129: INFO/ForkPoolWorker-1] Task create_task[4c855949-fd66-4b65-8dab-7c404361d5ff] succeeded in 30.0340999s: 'worked for 30 secs task id '
+[2021-11-16 09:40:14,221: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-16 09:40:14,254: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-16 09:40:15,330: INFO/MainProcess] mingle: all alone
+[2021-11-16 09:40:15,371: INFO/MainProcess] celery@f8492888d930 ready.
+[2021-11-16 09:40:20,363: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-16 09:52:12,642: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-16 09:52:12,677: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-16 09:52:13,752: INFO/MainProcess] mingle: all alone
+[2021-11-16 09:52:13,795: INFO/MainProcess] celery@f358142a814e ready.
+[2021-11-16 09:52:18,319: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-11-16 09:53:40,270: INFO/MainProcess] Received task: create_task[e2eebbf4-6495-4e27-bcee-86455a628957]  
+[2021-11-16 09:53:43,187: INFO/MainProcess] Received task: create_task[03d18e82-bcb4-4704-83aa-30a9870e784e]  
+[2021-11-16 09:53:43,763: INFO/MainProcess] Received task: create_task[3e8d881c-8209-42c6-8d46-d393879625c6]  
+[2021-11-16 09:53:43,975: INFO/MainProcess] Received task: create_task[c78b5c7c-6873-4e91-b651-e2df6fa91c1f]  
+[2021-11-16 09:53:44,134: INFO/MainProcess] Received task: create_task[eb4aa71a-cae1-4bff-860d-78d1f785d44b]  
+[2021-11-16 09:53:44,324: INFO/MainProcess] Received task: create_task[8dde2faa-d268-4ce7-a27f-3c001aafc918]  
+[2021-11-16 09:54:10,332: INFO/ForkPoolWorker-1] Task create_task[e2eebbf4-6495-4e27-bcee-86455a628957] succeeded in 30.05366509999999s: 'worked for 30 secs task id '
+[2021-11-16 09:54:13,238: INFO/ForkPoolWorker-2] Task create_task[03d18e82-bcb4-4704-83aa-30a9870e784e] succeeded in 30.03016690000004s: 'worked for 30 secs task id '
+[2021-11-16 09:54:40,396: INFO/ForkPoolWorker-1] Task create_task[3e8d881c-8209-42c6-8d46-d393879625c6] succeeded in 30.030967300000157s: 'worked for 30 secs task id '
+[2021-11-16 09:54:43,282: INFO/ForkPoolWorker-2] Task create_task[c78b5c7c-6873-4e91-b651-e2df6fa91c1f] succeeded in 30.031987599999866s: 'worked for 30 secs task id '
+[2021-11-16 09:55:10,441: INFO/ForkPoolWorker-1] Task create_task[eb4aa71a-cae1-4bff-860d-78d1f785d44b] succeeded in 30.035569599999917s: 'worked for 30 secs task id '
+[2021-11-16 09:55:13,296: INFO/ForkPoolWorker-2] Task create_task[8dde2faa-d268-4ce7-a27f-3c001aafc918] succeeded in 30.00770149999994s: 'worked for 30 secs task id '
+[2021-11-16 10:04:31,474: INFO/MainProcess] Connected to redis://redis:6379/0
+[2021-11-16 10:04:31,498: INFO/MainProcess] mingle: searching for neighbors
+[2021-11-16 10:04:32,559: INFO/MainProcess] mingle: all alone
+[2021-11-16 10:04:32,611: INFO/MainProcess] celery@64729baa0969 ready.
+[2021-11-16 10:04:37,125: INFO/MainProcess] Events of group {task} enabled by remote.
