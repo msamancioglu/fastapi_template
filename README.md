@@ -9,3 +9,4 @@ Fastapi template with
 Additionally
 + api rate limit
 + celery task monitoring
++ ELK logging
